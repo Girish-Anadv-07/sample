@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="docsearch:name" content="gunfolds" />
+    <meta name="docsearch:package_type" content="" />
+    <meta name="docsearch:release" content="" />
+    <meta name="docsearch:version" content="" />
+
+    <title>gunfolds.tools.clingo_rasl &mdash; gunfolds  documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/webfonts.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/codeblock.css" />
+<!-- linktags -->
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="gunfolds  documentation" href="#" />
+    <link rel="up" title="Module code" href="../../index.html" />
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+    <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="page-header">
+            <div class="page-header-inner">
+<!--block pageheader-->
+<div class="row">
+    <div class="col-sm-6 col-lg-7">
+
+        <div class="logo">
+        <a href="https://docs.typo3.org/" title="TYPO3 Documentation" >
+
+            <img src="../../../_static/gunfolds.png" width="484" height="130" alt="TYPO3 Logo" class="logo-image" />
+        </a>
+        </div>
+    </div><!--/.col-x-->
+    <div class="col-sm-6 col-lg-5">
+        <div role="search">
+            
+            <!--form global search-->
+        </div>
+    </div><!--/.col-x-->
+</div><!--/.row-->
+<!--/block pageheader-->
+            </div><!--/.page-header-inner-->
+        </div><!--/.page-header-->
+
+        
+
+        <div class="page-main">
+            <div class="page-main-inner">
+                <div class="page-main-navigation">
+                    <nav>
+                        <input type="checkbox" id="toggleToc" class="toc-checkbox">
+                        <div class="toc-header"><div class="toc-title">
+                                    <a class="toc-title-project" href="../../../index.html">gunfolds</a></div><div class="toc-actions">
+                                <label for="toggleToc" class="toc-toggle">
+                                    Menu
+                                </label>
+                            </div>
+                        </div>
+                        <div class="toc-collapse">
+<!-- searchbox.html -->
+<div id="searchbox" class="toc-search" role="search">
+    <form id="search-form" action="../../../search.html" autocomplete="off" method="get">
+        <input class="form-control" type="text" name="q" placeholder="Search this project" aria-label="Search this project" id="searchinput" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<!-- /searchbox.html -->
+                            <div class="toc" role="navigation" aria-label="main navigation">
+<!-- menu -->
+                                        <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../examples.html">Running examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributers.html">Contributors</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">gunfolds</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tools.html">tools package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../bfutils.html">bfutils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../calc_procs.html">calc_procs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../clingo.html">clingo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../clingo_msl.html">clingo_msl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../clingo_rasl.html">clingo_rasl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../comparison.html">comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../conversions.html">conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbn2latex.html">dbn2latex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ecj.html">ecj</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../grangercausality.html">grangercausality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../graphkit.html">graphkit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../gtool.html">gtool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../linear_model.html">linear_model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../myTimeout.html">myTimeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../neighborhoods.html">neighborhoods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pc.html">pc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../simpleloops.html">simpleloops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../traversal.html">traversal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../unknownrate.html">unknownrate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../zickle.html">zickle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /menu -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="page-main-content">
+                    <div class="rst-content">
+<!-- pager-hidden.html -->
+
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div class="breadcrumb-bar" role="navigation" aria-label="breadcrumbs navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../../../index.html">Start</a></li>
+            <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+        <li class="breadcrumb-item active" aria-current="page">gunfolds.tools.clingo_rasl</li>
+    </ol>
+    <div class="breadcrumb-additions">
+    </div>
+</div>
+<!-- /breadcrumbs.html -->
+<!-- displaysettingsui.html -->
+<div id="displaysettingsui" class="displaysettingsui">
+<div class="dsDivCogwheel"><i id="dsCogwheel" class="fas fa-cog" title="Display settings"></i></div>
+<div id="dsPanel" class="dsPanel" ><p><b>Display settings</b></p>
+<input type="checkbox" id="cbFullWidth"><label for="cbFullWidth">Use full width</label><br>
+Color scheme of code blocks:<br>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeDark" checked="checked" value="dark"/>
+<label for="rbCbsThemeDark">dark</label>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeLight" value="light"/>
+<label for="rbCbsThemeLight">light</label><br>
+<input type="checkbox" id="cbPermanent"><label for="cbPermanent">Make settings permanent</label><br>
+</div><!--/.dsPanel-->
+</div><!--/.displaysettingsui-->
+<!-- /displaysettingsui.html -->
+<!-- versionhints.html -->
+<div class="version-hints">
+
+    <div class="version-hints-inner" data-run-ajax="no">
+<!--filled from _static/ajax-version-hints.html-->
+</div><!--/.version-hints-inner-->
+</div><!--/.version-hints-->
+<!-- /versionhints.html -->
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+<!-- body -->
+    <h1>Source code for gunfolds.tools.clingo_rasl</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;This module contains clingo interaction functions&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">Template</span>
+<span class="kn">from</span> <span class="nn">gunfolds.tools.clingo</span> <span class="kn">import</span> <span class="n">clingo</span>
+<span class="kn">from</span> <span class="nn">gunfolds.tools.conversions</span> <span class="kn">import</span> <span class="n">g2clingo</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">rasl_jclingo2g</span><span class="p">,</span>\
+     <span class="n">drasl_jclingo2g</span><span class="p">,</span> <span class="n">msl_jclingo2g</span><span class="p">,</span> <span class="n">clingo_preamble</span><span class="p">,</span>\
+     <span class="n">numbered_g2clingo</span><span class="p">,</span> <span class="n">numbered_g2wclingo</span><span class="p">,</span> <span class="n">encode_list_sccs</span>
+
+<span class="n">all_u_rasl_program</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">{edge(X,Y)} :- node(X), node(Y).</span>
+<span class="s2">directed(X,Y,1) :- edge(X,Y).</span>
+<span class="s2">directed(X,Y,L) :- directed(X,Z,L-1), edge(Z,Y), L &lt;= U, u(U).</span>
+<span class="s2">bidirected(X,Y,U) :- directed(Z,X,L), directed(Z,Y,L), node(X;Y;Z), X &lt; Y, L &lt; U, u(U).</span>
+<span class="s2">countdirh(C):- C = #count { hdirected(X, Y): hdirected(X, Y), node(X), node(Y)}.</span>
+<span class="s2">countbidirh(C):- C = #count { hbidirected(X, Y): hbidirected(X, Y), node(X), node(Y)}.</span>
+<span class="s2">equald(L):- { directed(X,Y,L): hdirected(X,Y), node(X), node(Y) } == C, countdirh(C),u(L).</span>
+<span class="s2">equalb(L):- { bidirected(X,Y,L): hbidirected(X,Y), node(X), node(Y) } == C, countbidirh(C),u(L).</span>
+<span class="s2">equal(L) :- equald(L), equalb(L).</span>
+<span class="s2">{trueu(L)} :- equal(L).</span>
+<span class="s2">equaltest(M) :- 1 &lt; {equal(_)}, equal(M).</span>
+<span class="s2">min(M):- #min {MM:equaltest(MM)}=M, equaltest(_).</span>
+<span class="s2">repeat(N):- min(M), equal(N), M&lt;N.</span>
+<span class="s2">:- directed(X, Y, L), not hdirected(X, Y), node(X), node(Y), trueu(L).</span>
+<span class="s2">:- not directed(X, Y, L) , hdirected(X, Y), trueu(L).</span>
+<span class="s2">:- bidirected(X, Y, L), not hbidirected(X, Y), node(X), node(Y), X &lt; Y, trueu(L).</span>
+<span class="s2">:- not bidirected(X, Y, L), hbidirected(X, Y), X &lt; Y, trueu(L).</span>
+<span class="s2">:- not trueu(_).</span>
+<span class="s2">:- min(M), trueu(N), M&lt;N.</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+
+<span class="c1"># The ASP formulation that does the heavylifting of the RASL encoding</span>
+<span class="c1"># -------------------------------------------------------------------</span>
+<span class="c1"># Generate powerset of all possible edges and for given edges produce directed</span>
+<span class="c1"># edges up to the current undersampling and bidirected edges at the current</span>
+<span class="c1"># undersampling.</span>
+<span class="n">drasl_program</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    {edge1(X,Y)} :- node(X), node(Y).</span>
+<span class="s2">    directed(X, Y, 1) :- edge1(X, Y).</span>
+<span class="s2">    directed(X, Y, L) :- directed(X, Z, L-1), edge1(Z, Y), L &lt;= U, u(U, _).</span>
+<span class="s2">    bidirected(X, Y, U) :- directed(Z, X, L), directed(Z, Y, L), node(X;Y;Z), X &lt; Y, L &lt; U, u(U, _).</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+<span class="c1"># A set of no-go rules that compare the produces undersampled graph from the</span>
+<span class="c1"># current element of the edge powerset to the input measurement timescae</span>
+<span class="c1"># graph(s) and get rid of solutions that have a mismatch.</span>
+<span class="n">drasl_program</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    :- directed(X, Y, L), not hdirected(X, Y, K), node(X;Y), u(L, K).</span>
+<span class="s2">    :- bidirected(X, Y, L), not hbidirected(X, Y, K), node(X;Y), u(L, K), X &lt; Y.</span>
+<span class="s2">    :- not directed(X, Y, L), hdirected(X, Y, K), node(X;Y), u(L, K).</span>
+<span class="s2">    :- not bidirected(X, Y, L), hbidirected(X, Y, K), node(X;Y), u(L, K), X &lt; Y.</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+<span class="c1"># Filer out graphs that have already converged</span>
+<span class="c1"># ----------------------------------------</span>
+<span class="c1"># The next two sections are connected and are there to make sure that we do not</span>
+<span class="c1"># count graphs more than once. Withoutthese sections if a converged or</span>
+<span class="c1"># oscillating graph matches the measured graph H at multiple undersampling</span>
+<span class="c1"># rates, all of them will be listed as unique solutions. The main idea is to</span>
+<span class="c1"># first define a notequal operator, that works by checking individual edges,</span>
+<span class="c1"># and then filter out solutions where this operator does not hold for at least</span>
+<span class="c1"># one pair of undersampling rates.</span>
+
+<span class="c1"># Turns out that the generating rules above produce all directed edges for each</span>
+<span class="c1"># undersampling rate from 1 to u in each answer set, but only one set of</span>
+<span class="c1"># bidirected edges that correspond to the current u in this answer. Often, it</span>
+<span class="c1"># suffices to check repeatition of all directed edges to determine that a graph</span>
+<span class="c1"># has converged. The main reason is persistence of bidirected edges that stay</span>
+<span class="c1"># present once they appear at some undersampling rate. However, in some cases</span>
+<span class="c1"># the directed edges converge before the bidirected edges do. This happens when</span>
+<span class="c1"># the final set of directed edges generates at least one bidirected edge at the</span>
+<span class="c1"># next step.</span>
+
+<span class="c1"># The following two lines take advantage of the present history of all directed</span>
+<span class="c1"># edges across undersampling rates up to u, and build a workaround for the</span>
+<span class="c1"># absent history of bidirected edges. The first line is true if there was a</span>
+<span class="c1"># fork with X and Y at the ends before the last step of undersampling. This</span>
+<span class="c1"># would mean that the bidirected adge, if it exists at the current</span>
+<span class="c1"># undersampling step, was already there at the last step as well. The second</span>
+<span class="c1"># line sets notequal to true if at the current undersampling rate L a new</span>
+<span class="c1"># bidirected edge appeared.</span>
+<span class="n">drasl_program</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    pastfork(X,Y,L) :- directed(Z, X, K), directed(Z, Y, K), node(X;Y;Z), X &lt; Y, K &lt; L-1, uk(K), u(L, _).</span>
+<span class="s2">    notequal(L-1,L) :- bidirected(X,Y,L), not pastfork(X,Y,L), node(X;Y), X &lt; Y, u(L, _).</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+
+<span class="c1"># The following lines set the notequal condition for the cases when there is a</span>
+<span class="c1"># mismatch in directed edges between rate K lower than L and L - the current</span>
+<span class="c1"># undersampling rate.</span>
+<span class="n">drasl_program</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    notequal(K,L) :- directed(X, Y, K), not directed(X, Y, L), node(X;Y), K&lt;L, uk(K), u(L,_).</span>
+<span class="s2">    notequal(K,L) :- not directed(X, Y, K), directed(X, Y, L), node(X;Y), K&lt;L, uk(K), u(L,_).</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+
+<span class="c1"># This line filters out all solutions for which there is a K lower than the</span>
+<span class="c1"># current undersampling rate and the graph at rate K equals to the one at rate</span>
+<span class="c1"># L. This is a way to bypass our inability to specify the foroll quantifier</span>
+<span class="c1"># directly in clingo.</span>
+<span class="n">drasl_program</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    :- not notequal(K,L), K&lt;L, uk(K), u(L,_).</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+
+<span class="c1"># The following section refuces to handle graphs if their compressed</span>
+<span class="c1"># representation is a DAGs withuot forks. Too many options that are</span>
+<span class="c1"># uninformative anyways and thre is no need to waste computation on them.</span>
+<span class="n">drasl_program</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    nonempty(L) :- directed(X, Y, L), u(L,_).</span>
+<span class="s2">    nonempty(L) :- bidirected(X, Y, L), u(L,_).</span>
+<span class="s2">    :- not nonempty(L), u(L,_).</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="weighted_drasl_program"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.weighted_drasl_program">[docs]</a><span class="k">def</span> <span class="nf">weighted_drasl_program</span><span class="p">(</span><span class="n">directed</span><span class="p">,</span> <span class="n">bidirected</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Adjusts the optimization code based on the directed and bidirected priority</span>
+
+<span class="sd">    :param directed: priority of directed edges in optimization</span>
+<span class="sd">    :type directed: integer</span>
+
+<span class="sd">    :param bidirected: priority of bidirected edges in optimization</span>
+<span class="sd">        graph</span>
+<span class="sd">    :type bidirected: integer</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: optimization part of the ``clingo`` code</span>
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">Template</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    {edge1(X,Y)} :- node(X), node(Y).</span>
+<span class="s2">    directed(X, Y, 1) :- edge1(X, Y).</span>
+<span class="s2">    directed(X, Y, L) :- directed(X, Z, L-1), edge1(Z, Y), L &lt;= U, u(U, _).</span>
+<span class="s2">    bidirected(X, Y, U) :- directed(Z, X, L), directed(Z, Y, L), node(X;Y;Z), X &lt; Y, L &lt; U, u(U, _).</span>
+
+<span class="s2">    :~ not directed(X, Y, L), hdirected(X, Y, W, K), node(X;Y), u(L, K). [W@$directed,X,Y]</span>
+<span class="s2">    :~ not bidirected(X, Y, L), hbidirected(X, Y, W, K), node(X;Y), u(L, K), X &lt; Y. [W@$bidirected,X,Y]</span>
+<span class="s2">    :~ directed(X, Y, L), no_hdirected(X, Y, W, K), node(X;Y), u(L, K). [W@$directed,X,Y]</span>
+<span class="s2">    :~ bidirected(X, Y, L), no_hbidirected(X, Y, W, K), node(X;Y), u(L, K), X &lt; Y. [W@$bidirected,X,Y]</span>
+<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">t</span><span class="o">.</span><span class="n">substitute</span><span class="p">(</span><span class="n">directed</span><span class="o">=</span><span class="n">directed</span><span class="p">,</span> <span class="n">bidirected</span><span class="o">=</span><span class="n">bidirected</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="rate"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.rate">[docs]</a><span class="k">def</span> <span class="nf">rate</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">uname</span><span class="o">=</span><span class="s1">&#39;u&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Adds under sampling rate to ``clingo`` code</span>
+
+<span class="sd">    :param u: maximum under sampling rate </span>
+<span class="sd">    :type u: integer</span>
+<span class="sd">    </span>
+<span class="sd">    :param uname: name of the parameter</span>
+<span class="sd">    :type uname: string</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: predicate for under sampling rate</span>
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;1 {&quot;</span> <span class="o">+</span> <span class="n">uname</span> <span class="o">+</span> <span class="s2">&quot;(1..&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">u</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;)} 1.&quot;</span>
+    <span class="k">return</span> <span class="n">s</span></div>
+
+<div class="viewcode-block" id="drate"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.drate">[docs]</a><span class="k">def</span> <span class="nf">drate</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">gnum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Replaces ``rate`` if there are multiple under sampled inputs</span>
+
+<span class="sd">    :param u: maximum under sampling rate </span>
+<span class="sd">    :type u: integer</span>
+<span class="sd">    </span>
+<span class="sd">    :param gnum: number of under sampled inputs</span>
+<span class="sd">    :type gnum: integer</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: ``clingo`` code for under sampling with multiple under sampled inputs</span>
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;1 </span><span class="se">{{</span><span class="s2">u(1..</span><span class="si">{</span><span class="n">u</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">gnum</span><span class="si">}</span><span class="s2">)</span><span class="se">}}</span><span class="s2"> 1.&quot;</span>
+    <span class="k">return</span> <span class="n">s</span></div>
+
+<div class="viewcode-block" id="rasl_command"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.rasl_command">[docs]</a><span class="k">def</span> <span class="nf">rasl_command</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">urate</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">all_u</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Given a graph generates ``clingo`` code</span>
+
+<span class="sd">    :param g: ``gunfolds`` graph</span>
+<span class="sd">    :type g: dictionary (``gunfolds`` graphs)</span>
+<span class="sd">    </span>
+<span class="sd">    :param urate: maximum undersampling rate to consider</span>
+<span class="sd">    :type urate: integer</span>
+<span class="sd">    </span>
+<span class="sd">    :param all_u: (Ask its not used in the program)</span>
+<span class="sd">    :type all_u: boolean</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: ``clingo`` code</span>
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">urate</span><span class="p">:</span> <span class="n">urate</span> <span class="o">=</span> <span class="mi">1</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="n">g2clingo</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">rate</span><span class="p">(</span><span class="n">urate</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s1">&#39;{edge(X,Y)} :- node(X), node(Y). &#39;</span> <span class="o">+</span> <span class="n">all_u_rasl_program</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s2">&quot;#show edge/2. &quot;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s2">&quot;#show trueu/1. &quot;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s2">&quot;#show min/1.&quot;</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="n">command</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">b</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">command</span></div>
+
+<div class="viewcode-block" id="glist2str"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.glist2str">[docs]</a><span class="k">def</span> <span class="nf">glist2str</span><span class="p">(</span><span class="n">g_list</span><span class="p">,</span> <span class="n">weighted</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bdm</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Converts list of graphs into ``clingo`` predicates</span>
+
+<span class="sd">    :param glist: a list of graphs that are undersampled versions of</span>
+<span class="sd">        the same system</span>
+<span class="sd">    :type glist: list of dictionaries (``gunfolds`` graphs)</span>
+<span class="sd">    </span>
+<span class="sd">    :param weighted: whether the input graphs are weighted or</span>
+<span class="sd">        precize.  If `True` but no weight matrices are provided -</span>
+<span class="sd">        all weights are set to `1`</span>
+<span class="sd">    :type weighted: boolean</span>
+
+<span class="sd">    :param dm: a list of n-by-n 2-d square matrix of the weights for</span>
+<span class="sd">        directed edges of each input n-node graph</span>
+<span class="sd">    :type dm: list of numpy arrays</span>
+
+<span class="sd">    :param bdm: a list of *symmetric* n-by-n 2-d square matrix of the</span>
+<span class="sd">        weights for bidirected edges of each input n-node graph</span>
+<span class="sd">    :type bdm: list of numpy arrays</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: ``clingo`` predicates as a string</span>
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">dm</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">dm</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">g_list</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">bdm</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">bdm</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">g_list</span><span class="p">)</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">count</span><span class="p">,</span> <span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">g_list</span><span class="p">,</span> <span class="n">dm</span><span class="p">,</span> <span class="n">bdm</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">weighted</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="n">numbered_g2wclingo</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">directed_weights_matrix</span><span class="o">=</span><span class="n">D</span><span class="p">,</span> <span class="n">bidirected_weights_matrix</span><span class="o">=</span><span class="n">B</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span>  <span class="n">numbered_g2clingo</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+    <span class="k">return</span> <span class="n">s</span></div>
+
+<div class="viewcode-block" id="drasl_command"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.drasl_command">[docs]</a><span class="k">def</span> <span class="nf">drasl_command</span><span class="p">(</span><span class="n">g_list</span><span class="p">,</span> <span class="n">max_urate</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">weighted</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">scc</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bdm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">edge_weights</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Given a list of graphs generates ``clingo`` codes</span>
+
+<span class="sd">    :param glist: a list of graphs that are undersampled versions of</span>
+<span class="sd">        the same system</span>
+<span class="sd">    :type glist: list of dictionaries (``gunfolds`` graphs)</span>
+<span class="sd">    </span>
+<span class="sd">    :param max_urate: maximum under sampling rate</span>
+<span class="sd">    :type max_urate: integer</span>
+<span class="sd">    </span>
+<span class="sd">    :param weighted: whether the input graphs are weighted or</span>
+<span class="sd">        precize.  If ``True`` but no weight matrices are provided -</span>
+<span class="sd">        all weights are set to ``1``</span>
+<span class="sd">    :type weighted: boolean</span>
+<span class="sd">    </span>
+<span class="sd">    :param scc: whether to assume that each SCC in the input graph is</span>
+<span class="sd">        either a singleton or have ``gcd=1``.  If `True` a much more</span>
+<span class="sd">        efficient algorithm is employed.</span>
+<span class="sd">    :type scc: (GUESS)boolean</span>
+
+<span class="sd">    :param dm: a list of n-by-n 2-d square matrix of the weights for</span>
+<span class="sd">        directed edges of each input n-node graph</span>
+<span class="sd">    :type dm: list of numpy arrays</span>
+
+<span class="sd">    :param bdm: a list of *symmetric* n-by-n 2-d square matrix of the</span>
+<span class="sd">        weights for bidirected edges of each input n-node graph</span>
+<span class="sd">    :type bdm: list of numpy arrays</span>
+<span class="sd">    </span>
+<span class="sd">    :param edge_weights: a tuple of 2 values, the first is importance of matching directed weights when solving optimization problem and the second is for bidirected.</span>
+
+<span class="sd">    :type edge_weights: tuple with 2 elements</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: clingo code as a string</span>
+<span class="sd">    :rtype: string</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">({</span><span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="p">)</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">g_list</span><span class="p">})</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Input graphs have variable number of nodes!&quot;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">max_urate</span><span class="p">:</span> <span class="n">max_urate</span> <span class="o">=</span> <span class="mi">1</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">g_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">g_list</span><span class="p">)</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="n">clingo_preamble</span><span class="p">(</span><span class="n">g_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">scc</span><span class="p">:</span> <span class="n">command</span> <span class="o">+=</span> <span class="n">encode_list_sccs</span><span class="p">(</span><span class="n">g_list</span><span class="p">)</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;dagl(</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">g_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span><span class="si">}</span><span class="s2">). &quot;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="n">glist2str</span><span class="p">(</span><span class="n">g_list</span><span class="p">,</span> <span class="n">weighted</span><span class="o">=</span><span class="n">weighted</span><span class="p">,</span> <span class="n">dm</span><span class="o">=</span><span class="n">dm</span><span class="p">,</span> <span class="n">bdm</span><span class="o">=</span><span class="n">bdm</span><span class="p">)</span><span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="c1"># generate all graphs</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s1">&#39;uk(1..&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">max_urate</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;).&#39;</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">drate</span><span class="p">(</span><span class="n">max_urate</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)])</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="n">weighted_drasl_program</span><span class="p">(</span><span class="n">edge_weights</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">edge_weights</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="k">if</span> <span class="n">weighted</span> <span class="k">else</span> <span class="n">drasl_program</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;:- M = N, </span><span class="se">{{</span><span class="s2">u(M, 1..</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">); u(N, 1..</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">)</span><span class="se">}}</span><span class="s2"> == 2, u(M, _), u(N, _). &quot;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s2">&quot;#show edge1/2. &quot;</span>
+    <span class="n">command</span> <span class="o">+=</span> <span class="s2">&quot;#show u/2.&quot;</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="n">command</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="sa">b</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">command</span></div>
+
+<div class="viewcode-block" id="drasl"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.drasl">[docs]</a><span class="k">def</span> <span class="nf">drasl</span><span class="p">(</span><span class="n">glist</span><span class="p">,</span> <span class="n">capsize</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">urate</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">weighted</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">scc</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>  <span class="n">dm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bdm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pnum</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">edge_weights</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute all candidate causal time-scale graphs that could have</span>
+<span class="sd">    generated all undersampled graphs at all possible undersampling</span>
+<span class="sd">    rates up to ``urate`` in ``glist`` each at an unknown undersampling</span>
+<span class="sd">    rate.</span>
+<span class="sd">    </span>
+<span class="sd">    :param glist: a list of graphs that are undersampled versions of</span>
+<span class="sd">        the same system</span>
+<span class="sd">    :type glist: list of dictionaries (``gunfolds`` graphs)</span>
+
+<span class="sd">    :param capsize: maximum number of candidates to return</span>
+<span class="sd">    :type capsize: integer</span>
+
+<span class="sd">    :param timeout: timeout in seconds after which to interrupt</span>
+<span class="sd">        computation (0 - no limit)</span>
+<span class="sd">    :type timeout: integer</span>
+
+<span class="sd">    :param urate: maximum undersampling rate to consider</span>
+<span class="sd">    :type urate: integer</span>
+
+<span class="sd">    :param weighted: whether the input graphs are weighted or</span>
+<span class="sd">        imprecize.  If ``True`` but no weight matrices are provided -</span>
+<span class="sd">        all weights are set to ``1``</span>
+<span class="sd">    :type weighted: boolean</span>
+
+<span class="sd">    :param scc: whether to assume that each SCC in the input graph is</span>
+<span class="sd">        either a singleton or have ``gcd=1``.  If ``True`` a much more</span>
+<span class="sd">        efficient algorithm is employed.</span>
+<span class="sd">    :type scc: boolean</span>
+
+<span class="sd">    :param dm: a list of n-by-n 2-d square matrix of the weights for</span>
+<span class="sd">        directed edges of each input n-node graph</span>
+<span class="sd">    :type dm: list of numpy arrays</span>
+
+<span class="sd">    :param bdm: a list of *symmetric* n-by-n 2-d square matrix of the</span>
+<span class="sd">        weights for bidirected edges of each input n-node graph</span>
+<span class="sd">    :type bdm: list of numpy arrays</span>
+
+<span class="sd">    :param edge_weights: a tuple of 2 values, the first is importance of matching directed weights when solving optimization problem and the second is for bidirected.</span>
+
+<span class="sd">    :type edge_weights: tuple with 2 elements</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: results of parsed equivalent class</span>
+<span class="sd">    :rtype: dictionary</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">glist</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="n">glist</span> <span class="o">=</span> <span class="p">[</span><span class="n">glist</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">clingo</span><span class="p">(</span><span class="n">drasl_command</span><span class="p">(</span><span class="n">glist</span><span class="p">,</span> <span class="n">max_urate</span><span class="o">=</span><span class="n">urate</span><span class="p">,</span> <span class="n">weighted</span><span class="o">=</span><span class="n">weighted</span><span class="p">,</span>
+                                <span class="n">scc</span><span class="o">=</span><span class="n">scc</span><span class="p">,</span> <span class="n">dm</span><span class="o">=</span><span class="n">dm</span><span class="p">,</span> <span class="n">bdm</span><span class="o">=</span><span class="n">bdm</span><span class="p">,</span> <span class="n">edge_weights</span><span class="o">=</span><span class="n">edge_weights</span><span class="p">),</span>
+                  <span class="n">capsize</span><span class="o">=</span><span class="n">capsize</span><span class="p">,</span> <span class="n">convert</span><span class="o">=</span><span class="n">drasl_jclingo2g</span><span class="p">,</span>
+                  <span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span> <span class="n">exact</span><span class="o">=</span><span class="ow">not</span> <span class="n">weighted</span><span class="p">,</span> <span class="n">pnum</span><span class="o">=</span><span class="n">pnum</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="rasl"><a class="viewcode-back" href="../../../clingo_rasl.html#gunfolds.tools.clingo_rasl.rasl">[docs]</a><span class="k">def</span> <span class="nf">rasl</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">capsize</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">urate</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">pnum</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    :param g: ``gunfolds`` graph</span>
+<span class="sd">    :type g: dictionary (``gunfolds`` graphs)</span>
+
+<span class="sd">    :param capsize: maximum number of candidates to return</span>
+<span class="sd">    :type capsize: integer</span>
+
+<span class="sd">    :param timeout: timeout in seconds after which to interrupt</span>
+<span class="sd">        computation (0 - no limit)</span>
+<span class="sd">    :type timeout: integer</span>
+
+<span class="sd">    :param urate: maximum undersampling rate to consider</span>
+<span class="sd">    :type urate: integer</span>
+
+<span class="sd">    :param pnum: number of parallel threads to run ``clingo`` on</span>
+<span class="sd">    :type pnum: integer</span>
+<span class="sd">    </span>
+<span class="sd">    :returns: results of parsed equivalent class</span>
+<span class="sd">    :rtype: dictionary</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">clingo</span><span class="p">(</span><span class="n">rasl_command</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">urate</span><span class="o">=</span><span class="n">urate</span><span class="p">),</span> <span class="n">capsize</span><span class="o">=</span><span class="n">capsize</span><span class="p">,</span> <span class="n">convert</span><span class="o">=</span><span class="n">rasl_jclingo2g</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span> <span class="n">pnum</span><span class="o">=</span><span class="n">pnum</span><span class="p">)</span></div>
+</pre></div>
+<!-- /body -->
+                            </div>
+                        </div>
+<!-- pager.html -->
+
+<!-- /pager.html -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="page-footer">
+<!-- footer.html -->
+<footer>
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <div class="footer-additional">
+                    <ul class="footer-simplemenu">
+                        <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" title="sphinx_typo3_theme" target="_blank">
+                        <span>TYPO3 Theme 4.7.9</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-meta">
+                    <div class="footer-meta-copyright">
+                        &copy; Copyright neuroneural.net
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer.html -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: '../../../',
+            VERSION: '',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/underscore.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/doctools.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/popper.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/theme.min.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/js/searchtools.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/autocomplete.min.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../../../searchindex.js"); });
+    </script>
+    <script type="text/javascript" id="searchindexloader"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+
+</body>
+</html>

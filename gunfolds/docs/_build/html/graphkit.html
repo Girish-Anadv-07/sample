@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="docsearch:name" content="gunfolds" />
+    <meta name="docsearch:package_type" content="" />
+    <meta name="docsearch:release" content="" />
+    <meta name="docsearch:version" content="" />
+
+    <title>graphkit &mdash; gunfolds  documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/webfonts.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/codeblock.css" />
+<!-- linktags -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="gunfolds  documentation" href="#" />
+    <link rel="up" title="tools package" href="tools.html" />
+    <link rel="next" title="gtool" href="gtool.html" />
+    <link rel="prev" title="grangercausality" href="grangercausality.html" />
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+    <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="page-header">
+            <div class="page-header-inner">
+<!--block pageheader-->
+<div class="row">
+    <div class="col-sm-6 col-lg-7">
+
+        <div class="logo">
+        <a href="https://docs.typo3.org/" title="TYPO3 Documentation" >
+
+            <img src="_static/gunfolds.png" width="484" height="130" alt="TYPO3 Logo" class="logo-image" />
+        </a>
+        </div>
+    </div><!--/.col-x-->
+    <div class="col-sm-6 col-lg-5">
+        <div role="search">
+            
+            <!--form global search-->
+        </div>
+    </div><!--/.col-x-->
+</div><!--/.row-->
+<!--/block pageheader-->
+            </div><!--/.page-header-inner-->
+        </div><!--/.page-header-->
+
+        
+
+        <div class="page-main">
+            <div class="page-main-inner">
+                <div class="page-main-navigation">
+                    <nav>
+                        <input type="checkbox" id="toggleToc" class="toc-checkbox">
+                        <div class="toc-header"><div class="toc-title">
+                                    <a class="toc-title-project" href="index.html">gunfolds</a></div><div class="toc-actions">
+                                <label for="toggleToc" class="toc-toggle">
+                                    Menu
+                                </label>
+                            </div>
+                        </div>
+                        <div class="toc-collapse">
+<!-- searchbox.html -->
+<div id="searchbox" class="toc-search" role="search">
+    <form id="search-form" action="search.html" autocomplete="off" method="get">
+        <input class="form-control" type="text" name="q" placeholder="Search this project" aria-label="Search this project" id="searchinput" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<!-- /searchbox.html -->
+                            <div class="toc" role="navigation" aria-label="main navigation">
+<!-- menu -->
+                                        <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Running examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributers.html">Contributors</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">gunfolds</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="bfutils.html">bfutils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="calc_procs.html">calc_procs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clingo.html">clingo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clingo_msl.html">clingo_msl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clingo_rasl.html">clingo_rasl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comparison.html">comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conversions.html">conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dbn2latex.html">dbn2latex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ecj.html">ecj</a></li>
+<li class="toctree-l3"><a class="reference internal" href="grangercausality.html">grangercausality</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">graphkit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gtool.html">gtool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linear_model.html">linear_model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="myTimeout.html">myTimeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="neighborhoods.html">neighborhoods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc.html">pc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simpleloops.html">simpleloops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="traversal.html">traversal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unknownrate.html">unknownrate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zickle.html">zickle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                                    <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
+                                    <ul>
+<li><a class="reference internal" href="#">graphkit</a><ul>
+<li><a class="reference internal" href="#oce">OCE</a></li>
+<li><a class="reference internal" href="#id1">_OCE</a></li>
+<li><a class="reference internal" href="#normed-oce">_normed_OCE</a></li>
+<li><a class="reference internal" href="#normed-undirected-oce">_normed_undirected_OCE</a></li>
+<li><a class="reference internal" href="#undirected-oce">_undirected_OCE</a></li>
+<li><a class="reference internal" href="#addaring">addAring</a></li>
+<li><a class="reference internal" href="#addanedge">addanedge</a></li>
+<li><a class="reference internal" href="#addedges">addedges</a></li>
+<li><a class="reference internal" href="#bedgelist">bedgelist</a></li>
+<li><a class="reference internal" href="#bidirected-no-fork">bidirected_no_fork</a></li>
+<li><a class="reference internal" href="#bp-mean-degree-graph">bp_mean_degree_graph</a></li>
+<li><a class="reference internal" href="#bp-pow-degree-graph">bp_pow_degree_graph</a></li>
+<li><a class="reference internal" href="#cerror">cerror</a></li>
+<li><a class="reference internal" href="#clean-leaf-nodes">clean_leaf_nodes</a></li>
+<li><a class="reference internal" href="#complement">complement</a></li>
+<li><a class="reference internal" href="#degree-ring">degree_ring</a></li>
+<li><a class="reference internal" href="#delanedge">delanedge</a></li>
+<li><a class="reference internal" href="#deledges">deledges</a></li>
+<li><a class="reference internal" href="#density">density</a></li>
+<li><a class="reference internal" href="#digonly">digonly</a></li>
+<li><a class="reference internal" href="#edgelist">edgelist</a></li>
+<li><a class="reference internal" href="#ensure-gcd1">ensure_gcd1</a></li>
+<li><a class="reference internal" href="#ensure-graph-gcd1">ensure_graph_gcd1</a></li>
+<li><a class="reference internal" href="#fullyconnected">fullyconnected</a></li>
+<li><a class="reference internal" href="#gcd1-bp-mean-degree-graph">gcd1_bp_mean_degree_graph</a></li>
+<li><a class="reference internal" href="#gcd4scc">gcd4scc</a></li>
+<li><a class="reference internal" href="#gtranspose">gtranspose</a></li>
+<li><a class="reference internal" href="#inbedgelist">inbedgelist</a></li>
+<li><a class="reference internal" href="#inedgelist">inedgelist</a></li>
+<li><a class="reference internal" href="#isdedgesubset">isdedgesubset</a></li>
+<li><a class="reference internal" href="#isedgesubset">isedgesubset</a></li>
+<li><a class="reference internal" href="#mean-degree-graph">mean_degree_graph</a></li>
+<li><a class="reference internal" href="#merge-graphs">merge_graphs</a></li>
+<li><a class="reference internal" href="#merge-list">merge_list</a></li>
+<li><a class="reference internal" href="#no-children">no_children</a></li>
+<li><a class="reference internal" href="#no-parents">no_parents</a></li>
+<li><a class="reference internal" href="#oerror">oerror</a></li>
+<li><a class="reference internal" href="#pow-degree-graph">pow_degree_graph</a></li>
+<li><a class="reference internal" href="#randh">randH</a></li>
+<li><a class="reference internal" href="#randomdag">randomDAG</a></li>
+<li><a class="reference internal" href="#randomtril">randomTRIL</a></li>
+<li><a class="reference internal" href="#remove-loop">remove_loop</a></li>
+<li><a class="reference internal" href="#remove-tril-singletons">remove_tril_singletons</a></li>
+<li><a class="reference internal" href="#ring">ring</a></li>
+<li><a class="reference internal" href="#ring-sccs">ring_sccs</a></li>
+<li><a class="reference internal" href="#ringarcs">ringarcs</a></li>
+<li><a class="reference internal" href="#ringmore">ringmore</a></li>
+<li><a class="reference internal" href="#scale-free">scale_free</a></li>
+<li><a class="reference internal" href="#scc-unreachable">scc_unreachable</a></li>
+<li><a class="reference internal" href="#selfloop">selfloop</a></li>
+<li><a class="reference internal" href="#shift-labels">shift_labels</a></li>
+<li><a class="reference internal" href="#shift-list-labels">shift_list_labels</a></li>
+<li><a class="reference internal" href="#subgraph">subgraph</a></li>
+<li><a class="reference internal" href="#superclique">superclique</a></li>
+<li><a class="reference internal" href="#udensity">udensity</a></li>
+<li><a class="reference internal" href="#undedgelist">undedgelist</a></li>
+<li><a class="reference internal" href="#upairs">upairs</a></li>
+<li><a class="reference internal" href="#update-graph">update_graph</a></li>
+</ul>
+</li>
+</ul>
+<!-- /menu -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="page-main-content">
+                    <div class="rst-content">
+<!-- pager-hidden.html -->
+
+        <a class="no-focus" accesskey="p" href="grangercausality.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="n" href="gtool.html" tabindex="-1"></a>
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div class="breadcrumb-bar" role="navigation" aria-label="breadcrumbs navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Start</a></li>
+            <li class="breadcrumb-item"><a href="modules.html">gunfolds</a></li>
+            <li class="breadcrumb-item"><a href="tools.html">tools package</a></li>
+        <li class="breadcrumb-item active" aria-current="page">graphkit</li>
+    </ol>
+    <div class="breadcrumb-additions">
+        <a class="btn btn-sm btn-light" href="_sources/graphkit.rst.txt" rel="nofollow">
+            <span class="btn-icon"><span class="fas fa-code"></span></span>
+            <span class="btn-text">View source</span>
+        </a>
+    </div>
+</div>
+<!-- /breadcrumbs.html -->
+<!-- displaysettingsui.html -->
+<div id="displaysettingsui" class="displaysettingsui">
+<div class="dsDivCogwheel"><i id="dsCogwheel" class="fas fa-cog" title="Display settings"></i></div>
+<div id="dsPanel" class="dsPanel" ><p><b>Display settings</b></p>
+<input type="checkbox" id="cbFullWidth"><label for="cbFullWidth">Use full width</label><br>
+Color scheme of code blocks:<br>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeDark" checked="checked" value="dark"/>
+<label for="rbCbsThemeDark">dark</label>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeLight" value="light"/>
+<label for="rbCbsThemeLight">light</label><br>
+<input type="checkbox" id="cbPermanent"><label for="cbPermanent">Make settings permanent</label><br>
+</div><!--/.dsPanel-->
+</div><!--/.displaysettingsui-->
+<!-- /displaysettingsui.html -->
+<!-- versionhints.html -->
+<div class="version-hints">
+
+    <div class="version-hints-inner" data-run-ajax="no">
+<!--filled from _static/ajax-version-hints.html-->
+</div><!--/.version-hints-inner-->
+</div><!--/.version-hints-->
+<!-- /versionhints.html -->
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+<!-- body -->
+    <section id="graphkit">
+<h1>graphkit<a class="headerlink" href="#graphkit" title="Permalink to this headline">¶</a></h1>
+<section id="oce">
+<h2>OCE<a class="headerlink" href="#oce" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.OCE">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">OCE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalized</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undirected</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#OCE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.OCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return omission and comission errors for graphs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g1</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the graph to check</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the ground truth graph</p></li>
+<li><p><strong>normalized</strong> (<em>boolean</em>) – If True, returns normalized error and vice versa</p></li>
+<li><p><strong>undirected</strong> (<em>boolean</em>) – If True, returns undirected error and vice versa</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>omission and comission errors for graphs</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="id1">
+<h2>_OCE<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit._OCE">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">_OCE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#_OCE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit._OCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Omission/commision error of <code class="docutils literal notranslate"><span class="pre">g1</span></code> referenced to <code class="docutils literal notranslate"><span class="pre">g2</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g1</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the graph to check</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the ground truth graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Omission/commision error for directed and bidirected edges</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="normed-oce">
+<h2>_normed_OCE<a class="headerlink" href="#normed-oce" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit._normed_OCE">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">_normed_OCE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#_normed_OCE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit._normed_OCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return omission and comission errors for directed and
+bidirected edges.</p>
+<p>Omission error is normalized by the number of edges present
+in the ground truth. Commision error is normalized by the
+number of possible edges minus the number of edges present
+in the ground truth.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g1</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the graph to check</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the ground truth graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>normalized omission and comission errors for directed and
+bidirected edges.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="normed-undirected-oce">
+<h2>_normed_undirected_OCE<a class="headerlink" href="#normed-undirected-oce" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit._normed_undirected_OCE">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">_normed_undirected_OCE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#_normed_undirected_OCE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit._normed_undirected_OCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return omission and comission errors for undirected edges.</p>
+<p>Omission error is normalized by the number of edges present
+in the ground truth. Commision error is normalized by the
+number of possible edges minus the number of edges present
+in the ground truth.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g1</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the graph to check</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the ground truth graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>omission and comission errors for normalized undirected edges</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="undirected-oce">
+<h2>_undirected_OCE<a class="headerlink" href="#undirected-oce" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit._undirected_OCE">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">_undirected_OCE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#_undirected_OCE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit._undirected_OCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns omission/commision error of <code class="docutils literal notranslate"><span class="pre">g1</span></code> referenced to <code class="docutils literal notranslate"><span class="pre">g2</span></code>
+if both are undirected graphs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g1</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the graph to check</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – the ground truth graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>omission and comission errors for undirected edges</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="addaring">
+<h2>addAring<a class="headerlink" href="#addaring" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.addAring">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">addAring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#addAring"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.addAring" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a ring to <code class="docutils literal notranslate"><span class="pre">g</span></code> in place</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="addanedge">
+<h2>addanedge<a class="headerlink" href="#addanedge" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.addanedge">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">addanedge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#addanedge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.addanedge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>e</strong> (<em>pair of integers</em>) – edge to be added</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="addedges">
+<h2>addedges<a class="headerlink" href="#addedges" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.addedges">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">addedges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#addedges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.addedges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>es</strong> (<em>list of pairs of integers</em>) – list of edges to be added</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="bedgelist">
+<h2>bedgelist<a class="headerlink" href="#bedgelist" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.bedgelist">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">bedgelist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#bedgelist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.bedgelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bidirected edge list with flips</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of tuples for bidirected edges of <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of tuples</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="bidirected-no-fork">
+<h2>bidirected_no_fork<a class="headerlink" href="#bidirected-no-fork" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.bidirected_no_fork">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">bidirected_no_fork</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#bidirected_no_fork"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.bidirected_no_fork" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="bp-mean-degree-graph">
+<h2>bp_mean_degree_graph<a class="headerlink" href="#bp-mean-degree-graph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.bp_mean_degree_graph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">bp_mean_degree_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#bp_mean_degree_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.bp_mean_degree_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a random graph with <code class="docutils literal notranslate"><span class="pre">node_num</span></code>, nodes and mean outgoing degree of <code class="docutils literal notranslate"><span class="pre">degree</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_num</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree</p></li>
+<li><p><strong>seed</strong> (<em>integer</em>) – random seed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a random graph with <code class="docutils literal notranslate"><span class="pre">node_num</span></code>, nodes and mean outgoing degree of <code class="docutils literal notranslate"><span class="pre">degree</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="bp-pow-degree-graph">
+<h2>bp_pow_degree_graph<a class="headerlink" href="#bp-pow-degree-graph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.bp_pow_degree_graph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">bp_pow_degree_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prob</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#bp_pow_degree_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.bp_pow_degree_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_num</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree</p></li>
+<li><p><strong>prob</strong> (<em>float</em>) – probability</p></li>
+<li><p><strong>seed</strong> (<em>integer</em>) – random seed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="cerror">
+<h2>cerror<a class="headerlink" href="#cerror" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.cerror">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">cerror</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#cerror"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.cerror" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns normalized comission error</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>d</strong> (<em>dictionary</em>) – calculated error</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>normalized comission error</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="clean-leaf-nodes">
+<h2>clean_leaf_nodes<a class="headerlink" href="#clean-leaf-nodes" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.clean_leaf_nodes">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">clean_leaf_nodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#clean_leaf_nodes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.clean_leaf_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="complement">
+<h2>complement<a class="headerlink" href="#complement" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.complement">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">complement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">G</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#complement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.complement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the complement of <code class="docutils literal notranslate"><span class="pre">G</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>G</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> format graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the complement of <code class="docutils literal notranslate"><span class="pre">G</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="degree-ring">
+<h2>degree_ring<a class="headerlink" href="#degree-ring" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.degree_ring">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">degree_ring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#degree_ring"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.degree_ring" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a ring graph with <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes and average degree <code class="docutils literal notranslate"><span class="pre">d</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>d</strong> (<em>integer</em>) – degree</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a ring graph with <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes and average degree <code class="docutils literal notranslate"><span class="pre">d</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="delanedge">
+<h2>delanedge<a class="headerlink" href="#delanedge" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.delanedge">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">delanedge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#delanedge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.delanedge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>e</strong> (<em>pair of integers</em>) – edge to be deleted</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="deledges">
+<h2>deledges<a class="headerlink" href="#deledges" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.deledges">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">deledges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#deledges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.deledges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>es</strong> (<em>list of pairs of integers</em>) – list of edges to be deleted</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="density">
+<h2>density<a class="headerlink" href="#density" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.density">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">density</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#density"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.density" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the density of the graph</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the density of the graph</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="digonly">
+<h2>digonly<a class="headerlink" href="#digonly" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.digonly">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">digonly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#digonly"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.digonly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a subgraph of <code class="docutils literal notranslate"><span class="pre">H</span></code> contatining all directed edges of <code class="docutils literal notranslate"><span class="pre">H</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>H</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a subgraph of <code class="docutils literal notranslate"><span class="pre">H</span></code> contatining all directed edges of <code class="docutils literal notranslate"><span class="pre">H</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="edgelist">
+<h2>edgelist<a class="headerlink" href="#edgelist" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.edgelist">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">edgelist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#edgelist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.edgelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of tuples for edges of <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of tuples for edges of <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of tuples</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="ensure-gcd1">
+<h2>ensure_gcd1<a class="headerlink" href="#ensure-gcd1" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.ensure_gcd1">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">ensure_gcd1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scc</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#ensure_gcd1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.ensure_gcd1" title="Permalink to this definition">¶</a></dt>
+<dd><p>If <code class="docutils literal notranslate"><span class="pre">scc</span></code>’s loop structure is not <code class="docutils literal notranslate"><span class="pre">gcd=1</span></code> pick a random node and
+add a self-loop</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>scc</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – a strongly connected component</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a graph with <code class="docutils literal notranslate"><span class="pre">gcd=1</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="ensure-graph-gcd1">
+<h2>ensure_graph_gcd1<a class="headerlink" href="#ensure-graph-gcd1" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.ensure_graph_gcd1">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">ensure_graph_gcd1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#ensure_graph_gcd1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.ensure_graph_gcd1" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes any graph, breaks it into SCCs and make sure each SCC has a gcd of 1</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a graph with <code class="docutils literal notranslate"><span class="pre">gcd=1</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="fullyconnected">
+<h2>fullyconnected<a class="headerlink" href="#fullyconnected" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.fullyconnected">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">fullyconnected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#fullyconnected"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.fullyconnected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a graph with all possible directed edges</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>integer</em>) – number of nodes</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a graph with all possible directed edges</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="gcd1-bp-mean-degree-graph">
+<h2>gcd1_bp_mean_degree_graph<a class="headerlink" href="#gcd1-bp-mean-degree-graph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.gcd1_bp_mean_degree_graph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">gcd1_bp_mean_degree_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#gcd1_bp_mean_degree_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.gcd1_bp_mean_degree_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random graph with <code class="docutils literal notranslate"><span class="pre">gcd=1</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_num</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree</p></li>
+<li><p><strong>seed</strong> (<em>integer</em>) – random seed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a random graph with <code class="docutils literal notranslate"><span class="pre">gcd=1</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="gcd4scc">
+<h2>gcd4scc<a class="headerlink" href="#gcd4scc" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.gcd4scc">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">gcd4scc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SCC</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#gcd4scc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.gcd4scc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the greatest common divisor of the strongly connected component</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SCC</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – a strongly connected component</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the greatest common divisor of the strongly connected component</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="gtranspose">
+<h2>gtranspose<a class="headerlink" href="#gtranspose" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.gtranspose">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">gtranspose</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">G</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#gtranspose"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.gtranspose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transpose (rev. edges of) <code class="docutils literal notranslate"><span class="pre">G</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>G</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> format graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Transpose of given graph</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="inbedgelist">
+<h2>inbedgelist<a class="headerlink" href="#inbedgelist" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.inbedgelist">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">inbedgelist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#inbedgelist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.inbedgelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterate over the list of tuples for edges of <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="inedgelist">
+<h2>inedgelist<a class="headerlink" href="#inedgelist" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.inedgelist">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">inedgelist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#inedgelist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.inedgelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterate over the list of tuples for edges of <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="isdedgesubset">
+<h2>isdedgesubset<a class="headerlink" href="#isdedgesubset" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.isdedgesubset">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">isdedgesubset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g2star</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#isdedgesubset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.isdedgesubset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if <code class="docutils literal notranslate"><span class="pre">g2star</span></code> directed edges are a subset of those of <code class="docutils literal notranslate"><span class="pre">g2</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g2star</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph to be checked</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True, if <code class="docutils literal notranslate"><span class="pre">g2star</span></code> directed edges are a subset of those of <code class="docutils literal notranslate"><span class="pre">g2</span></code> and vice versa</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="isedgesubset">
+<h2>isedgesubset<a class="headerlink" href="#isedgesubset" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.isedgesubset">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">isedgesubset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g2star</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#isedgesubset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.isedgesubset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if all <code class="docutils literal notranslate"><span class="pre">g2star</span></code> edges are a subset of those of <code class="docutils literal notranslate"><span class="pre">g2</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g2star</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph to be checked</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True, if all <code class="docutils literal notranslate"><span class="pre">g2star</span></code> edges are a subset of those of <code class="docutils literal notranslate"><span class="pre">g2</span></code> and vice versa</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="mean-degree-graph">
+<h2>mean_degree_graph<a class="headerlink" href="#mean-degree-graph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.mean_degree_graph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">mean_degree_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#mean_degree_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.mean_degree_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns mean outgoing degree of the graph</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_num</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>mean outgoing degree of the graph</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="merge-graphs">
+<h2>merge_graphs<a class="headerlink" href="#merge-graphs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.merge_graphs">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">merge_graphs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">glist</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#merge_graphs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.merge_graphs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Merge a list of graphs at <code class="docutils literal notranslate"><span class="pre">u=1</span></code> into a single new graph <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>glist</strong> (list of dictionaries (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graphs)) – a list of graphs that are undersampled versions of
+the same system</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a new  graph by merging a list of graphs at <code class="docutils literal notranslate"><span class="pre">u=1</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="merge-list">
+<h2>merge_list<a class="headerlink" href="#merge-list" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.merge_list">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">merge_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">glist</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#merge_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.merge_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Merge the graphs in the list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>glist</strong> (list of dictionaries (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graphs)) – a list of graphs that are undersampled versions of
+the same system</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>merged graph of a list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="no-children">
+<h2>no_children<a class="headerlink" href="#no-children" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.no_children">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">no_children</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#no_children"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.no_children" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="no-parents">
+<h2>no_parents<a class="headerlink" href="#no-parents" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.no_parents">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">no_parents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#no_parents"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.no_parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="oerror">
+<h2>oerror<a class="headerlink" href="#oerror" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.oerror">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">oerror</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#oerror"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.oerror" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns normalized omission error</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>d</strong> (<em>dictionary</em>) – calculated error</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>normalized omission error</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="pow-degree-graph">
+<h2>pow_degree_graph<a class="headerlink" href="#pow-degree-graph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.pow_degree_graph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">pow_degree_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#pow_degree_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.pow_degree_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_num</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree</p></li>
+<li><p><strong>seed</strong> (<em>integer</em>) – random seed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="randh">
+<h2>randH<a class="headerlink" href="#randh" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.randH">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">randH</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#randH"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.randH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a random H with <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>d1</strong> (<em>integer</em>) – number of additional edges to the ring</p></li>
+<li><p><strong>d2</strong> (<em>integer</em>) – (ask) number of random permutations</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a random graph with <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="randomdag">
+<h2>randomDAG<a class="headerlink" href="#randomdag" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.randomDAG">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">randomDAG</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connected</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#randomDAG"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.randomDAG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a random DAG</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree</p></li>
+<li><p><strong>connected</strong> (<em>boolean</em>) – If true, returns a connected DAG</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a random DAG</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>NetworkX graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="randomtril">
+<h2>randomTRIL<a class="headerlink" href="#randomtril" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.randomTRIL">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">randomTRIL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connected</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#randomTRIL"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.randomTRIL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a random triangular matrix</p>
+<p><a class="reference external" href="https://stackoverflow.com/a/56514463">https://stackoverflow.com/a/56514463</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> (<em>integer</em>) – size of the matrix</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree</p></li>
+<li><p><strong>connected</strong> (<em>boolean</em>) – (Ask)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a random triangular adjacency matrix</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="remove-loop">
+<h2>remove_loop<a class="headerlink" href="#remove-loop" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.remove_loop">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">remove_loop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">G</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dag</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#remove_loop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.remove_loop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the loops from <code class="docutils literal notranslate"><span class="pre">G</span></code> according to <code class="docutils literal notranslate"><span class="pre">dag</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>G</strong> (<em>NetworkX graph</em>) – graph</p></li>
+<li><p><strong>dag</strong> (<em>NetworkX graph</em>) – DAG</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>graph with removed loop according to DAG</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>NetworkX graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="remove-tril-singletons">
+<h2>remove_tril_singletons<a class="headerlink" href="#remove-tril-singletons" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.remove_tril_singletons">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">remove_tril_singletons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#remove_tril_singletons"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.remove_tril_singletons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure that the DAG resulting from this matrix will not have
+singleton nodes not connected to anything.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>T</strong> (<em>numpy array</em>) – lower triangular matrix representing a DAG</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>adjacency matrix where no singleton nodes are connected to anything</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="ring">
+<h2>ring<a class="headerlink" href="#ring" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.ring">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">ring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#ring"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.ring" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Ring Graph with <code class="docutils literal notranslate"><span class="pre">n</span></code> number of nodes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>integer</em>) – number of nodes</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a Ring Graph with <code class="docutils literal notranslate"><span class="pre">n</span></code> number of nodes</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="ring-sccs">
+<h2>ring_sccs<a class="headerlink" href="#ring-sccs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.ring_sccs">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">ring_sccs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_sccs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dens</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_cross_connections</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#ring_sccs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.ring_sccs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a random graph with <code class="docutils literal notranslate"><span class="pre">num_sccs</span></code> SCCs, n-nodes each</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num</strong> (<em>integer</em>) – number of nodes in each sec</p></li>
+<li><p><strong>num_sccs</strong> (<em>integer</em>) – number of secs</p></li>
+<li><p><strong>dens</strong> (<em>float</em>) – density of each sac</p></li>
+<li><p><strong>degree</strong> (<em>integer</em>) – degree of the connecting DAG</p></li>
+<li><p><strong>max_cross_connections</strong> (<em>integer</em>) – maximum number of connections per each edge in DAG</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a random graph with <code class="docutils literal notranslate"><span class="pre">num_sccs</span></code> SCCs, n-nodes each</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="ringarcs">
+<h2>ringarcs<a class="headerlink" href="#ringarcs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.ringarcs">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">ringarcs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#ringarcs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.ringarcs" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>n</strong> (<em>integer</em>) – (ask)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="ringmore">
+<h2>ringmore<a class="headerlink" href="#ringmore" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.ringmore">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">ringmore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#ringmore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.ringmore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a <code class="docutils literal notranslate"><span class="pre">n</span></code> node ring graph with <code class="docutils literal notranslate"><span class="pre">m</span></code> additional edges</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>integer</em>) – number of nodes</p></li>
+<li><p><strong>m</strong> (<em>integer</em>) – number of additional edges</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a <code class="docutils literal notranslate"><span class="pre">n</span></code> node ring graph with <code class="docutils literal notranslate"><span class="pre">m</span></code> additional edges</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="scale-free">
+<h2>scale_free<a class="headerlink" href="#scale-free" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.scale_free">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">scale_free</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delta_in</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delta_out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#scale_free"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.scale_free" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> – </p></li>
+<li><p><strong>alpha</strong> – </p></li>
+<li><p><strong>beta</strong> – </p></li>
+<li><p><strong>delta_in</strong> – </p></li>
+<li><p><strong>delta_out</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="scc-unreachable">
+<h2>scc_unreachable<a class="headerlink" href="#scc-unreachable" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.scc_unreachable">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">scc_unreachable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#scc_unreachable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.scc_unreachable" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="selfloop">
+<h2>selfloop<a class="headerlink" href="#selfloop" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.selfloop">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">selfloop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#selfloop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.selfloop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if <code class="docutils literal notranslate"><span class="pre">g</span></code> has a self loop at node n</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>integer</em>) – node</p></li>
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if <code class="docutils literal notranslate"><span class="pre">g</span></code> has a self loop at node n and vice versa</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="shift-labels">
+<h2>shift_labels<a class="headerlink" href="#shift-labels" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.shift_labels">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">shift_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#shift_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.shift_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns same graph with shifted labels</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>shift</strong> (<em>integer</em>) – number of vertices to be shifted</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>same graph with shifted labels</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="shift-list-labels">
+<h2>shift_list_labels<a class="headerlink" href="#shift-list-labels" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.shift_list_labels">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">shift_list_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">glist</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#shift_list_labels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.shift_list_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shifts the labels for a list of graphs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>glist</strong> (list of dictionaries (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graphs)) – a list of graphs that are undersampled versions of
+the same system</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>shifted list of graphs</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="subgraph">
+<h2>subgraph<a class="headerlink" href="#subgraph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.subgraph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">subgraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#subgraph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.subgraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a subgraph of <code class="docutils literal notranslate"><span class="pre">g</span></code> that consists of <code class="docutils literal notranslate"><span class="pre">nodes</span></code> and their
+interconnections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>nodes</strong> (<em>list</em>) – integer valued nodes to include</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a subgraph of <code class="docutils literal notranslate"><span class="pre">g</span></code> that consists of <code class="docutils literal notranslate"><span class="pre">nodes</span></code> and their
+interconnections.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary(<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="superclique">
+<h2>superclique<a class="headerlink" href="#superclique" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.superclique">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">superclique</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#superclique"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.superclique" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Graph with all possible edges</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>integer</em>) – number of nodes</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a Graph with all possible edges</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="udensity">
+<h2>udensity<a class="headerlink" href="#udensity" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.udensity">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">udensity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#udensity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.udensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>(Ask)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>g</strong> (dictionary (<cite>gunfolds</cite> graph)) – <cite>gunfolds</cite> graph</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="undedgelist">
+<h2>undedgelist<a class="headerlink" href="#undedgelist" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.undedgelist">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">undedgelist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_bi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#undedgelist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.undedgelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of tuples for undirected edges of <code class="docutils literal notranslate"><span class="pre">g</span></code> with nodes
+sorted in ascending order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – <code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph</p></li>
+<li><p><strong>exclude_bi</strong> (<em>boolean</em>) – if True, only converts directed edges to undirected
+edges. If False, converts directed and bidirected edges to undirected edges</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of tuples for undirected edges of <code class="docutils literal notranslate"><span class="pre">g</span></code> with nodes
+sorted in ascending order</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="upairs">
+<h2>upairs<a class="headerlink" href="#upairs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.upairs">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">upairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#upairs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.upairs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">n</span></code> unique nonsequential pairs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>integer</em>) – (ask)</p></li>
+<li><p><strong>k</strong> (<em>integer</em>) – (ask)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>n unique nonsequential pairs</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="update-graph">
+<h2>update_graph<a class="headerlink" href="#update-graph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.graphkit.update_graph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.graphkit.</span></span><span class="sig-name descname"><span class="pre">update_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/graphkit.html#update_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.graphkit.update_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update <code class="docutils literal notranslate"><span class="pre">g</span></code> with connections (or nodes) from <code class="docutils literal notranslate"><span class="pre">g2</span></code>. Both must be at <code class="docutils literal notranslate"><span class="pre">u=1</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – graph to be updated</p></li>
+<li><p><strong>g2</strong> (dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)) – reference graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>updated <code class="docutils literal notranslate"><span class="pre">g</span></code> with respect to <code class="docutils literal notranslate"><span class="pre">g2</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary (<code class="docutils literal notranslate"><span class="pre">gunfolds</span></code> graph)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+<!-- /body -->
+                            </div>
+                        </div>
+<!-- pager.html -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="grangercausality.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="gtool.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+<!-- /pager.html -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="page-footer">
+<!-- footer.html -->
+<footer>
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <div class="footer-additional">
+                    <ul class="footer-simplemenu">
+                        <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" title="sphinx_typo3_theme" target="_blank">
+                        <span>TYPO3 Theme 4.7.9</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-meta">
+                    <div class="footer-meta-copyright">
+                        &copy; Copyright neuroneural.net
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer.html -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: './',
+            VERSION: '',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+    <script type="text/javascript" src="_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/js/underscore.min.js"></script>
+    <script type="text/javascript" src="_static/js/doctools.min.js"></script>
+    <script type="text/javascript" src="_static/js/popper.min.js"></script>
+    <script type="text/javascript" src="_static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/js/theme.min.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/searchtools.min.js"></script>
+    <script type="text/javascript" src="_static/js/autocomplete.min.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script type="text/javascript">
+        jQuery(function() { Search.loadIndex("searchindex.js"); });
+    </script>
+    <script type="text/javascript" id="searchindexloader"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+
+</body>
+</html>

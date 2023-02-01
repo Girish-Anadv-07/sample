@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="docsearch:name" content="gunfolds" />
+    <meta name="docsearch:package_type" content="" />
+    <meta name="docsearch:release" content="" />
+    <meta name="docsearch:version" content="" />
+
+    <title>unknownrate &mdash; gunfolds  documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/webfonts.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/codeblock.css" />
+<!-- linktags -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="gunfolds  documentation" href="#" />
+    <link rel="up" title="tools package" href="tools.html" />
+    <link rel="next" title="zickle" href="zickle.html" />
+    <link rel="prev" title="traversal" href="traversal.html" />
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+    <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="page-header">
+            <div class="page-header-inner">
+<!--block pageheader-->
+<div class="row">
+    <div class="col-sm-6 col-lg-7">
+
+        <div class="logo">
+        <a href="https://docs.typo3.org/" title="TYPO3 Documentation" >
+
+            <img src="_static/gunfolds.png" width="484" height="130" alt="TYPO3 Logo" class="logo-image" />
+        </a>
+        </div>
+    </div><!--/.col-x-->
+    <div class="col-sm-6 col-lg-5">
+        <div role="search">
+            
+            <!--form global search-->
+        </div>
+    </div><!--/.col-x-->
+</div><!--/.row-->
+<!--/block pageheader-->
+            </div><!--/.page-header-inner-->
+        </div><!--/.page-header-->
+
+        
+
+        <div class="page-main">
+            <div class="page-main-inner">
+                <div class="page-main-navigation">
+                    <nav>
+                        <input type="checkbox" id="toggleToc" class="toc-checkbox">
+                        <div class="toc-header"><div class="toc-title">
+                                    <a class="toc-title-project" href="index.html">gunfolds</a></div><div class="toc-actions">
+                                <label for="toggleToc" class="toc-toggle">
+                                    Menu
+                                </label>
+                            </div>
+                        </div>
+                        <div class="toc-collapse">
+<!-- searchbox.html -->
+<div id="searchbox" class="toc-search" role="search">
+    <form id="search-form" action="search.html" autocomplete="off" method="get">
+        <input class="form-control" type="text" name="q" placeholder="Search this project" aria-label="Search this project" id="searchinput" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<!-- /searchbox.html -->
+                            <div class="toc" role="navigation" aria-label="main navigation">
+<!-- menu -->
+                                        <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Running examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributers.html">Contributors</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">gunfolds</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="bfutils.html">bfutils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="calc_procs.html">calc_procs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clingo.html">clingo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clingo_msl.html">clingo_msl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clingo_rasl.html">clingo_rasl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="comparison.html">comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="conversions.html">conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dbn2latex.html">dbn2latex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ecj.html">ecj</a></li>
+<li class="toctree-l3"><a class="reference internal" href="grangercausality.html">grangercausality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="graphkit.html">graphkit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gtool.html">gtool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linear_model.html">linear_model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="myTimeout.html">myTimeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="neighborhoods.html">neighborhoods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pc.html">pc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simpleloops.html">simpleloops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="traversal.html">traversal</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">unknownrate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zickle.html">zickle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                                    <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
+                                    <ul>
+<li><a class="reference internal" href="#">unknownrate</a><ul>
+<li><a class="reference internal" href="#add2set">add2set_</a></li>
+<li><a class="reference internal" href="#add2set-loop">add2set_loop</a></li>
+<li><a class="reference internal" href="#allsloops">allsloops</a></li>
+<li><a class="reference internal" href="#bconflictor">bconflictor</a></li>
+<li><a class="reference internal" href="#build-loop-step">build_loop_step</a></li>
+<li><a class="reference internal" href="#cacheconflicts">cacheconflicts</a></li>
+<li><a class="reference internal" href="#conflictor">conflictor</a></li>
+<li><a class="reference internal" href="#conflictor-set">conflictor_set</a></li>
+<li><a class="reference internal" href="#conflictors">conflictors</a></li>
+<li><a class="reference internal" href="#confpairs">confpairs</a></li>
+<li><a class="reference internal" href="#delaloop">delAloop</a></li>
+<li><a class="reference internal" href="#del-loop">del_loop</a></li>
+<li><a class="reference internal" href="#e2num">e2num</a></li>
+<li><a class="reference internal" href="#ekey2e">ekey2e</a></li>
+<li><a class="reference internal" href="#forward-loop-match">forward_loop_match</a></li>
+<li><a class="reference internal" href="#gen-loops">gen_loops</a></li>
+<li><a class="reference internal" href="#iteqclass">iteqclass</a></li>
+<li><a class="reference internal" href="#lconflictors">lconflictors</a></li>
+<li><a class="reference internal" href="#lconfpairs">lconfpairs</a></li>
+<li><a class="reference internal" href="#le2num">le2num</a></li>
+<li><a class="reference internal" href="#liteqclass">liteqclass</a></li>
+<li><a class="reference internal" href="#loop2graph">loop2graph</a></li>
+<li><a class="reference internal" href="#matchaloop">matchAloop</a></li>
+<li><a class="reference internal" href="#perm-circular">perm_circular</a></li>
+<li><a class="reference internal" href="#prune-conflicts">prune_conflicts</a></li>
+<li><a class="reference internal" href="#prune-loops">prune_loops</a></li>
+<li><a class="reference internal" href="#reverse">reverse</a></li>
+<li><a class="reference internal" href="#reverse-edge-match">reverse_edge_match</a></li>
+<li><a class="reference internal" href="#reverse-loop-match">reverse_loop_match</a></li>
+<li><a class="reference internal" href="#skip-conflict">skip_conflict</a></li>
+<li><a class="reference internal" href="#skip-conflictors">skip_conflictors</a></li>
+<li><a class="reference internal" href="#start-progress-bar">start_progress_bar</a></li>
+</ul>
+</li>
+</ul>
+<!-- /menu -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="page-main-content">
+                    <div class="rst-content">
+<!-- pager-hidden.html -->
+
+        <a class="no-focus" accesskey="p" href="traversal.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="n" href="zickle.html" tabindex="-1"></a>
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div class="breadcrumb-bar" role="navigation" aria-label="breadcrumbs navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Start</a></li>
+            <li class="breadcrumb-item"><a href="modules.html">gunfolds</a></li>
+            <li class="breadcrumb-item"><a href="tools.html">tools package</a></li>
+        <li class="breadcrumb-item active" aria-current="page">unknownrate</li>
+    </ol>
+    <div class="breadcrumb-additions">
+        <a class="btn btn-sm btn-light" href="_sources/unknownrate.rst.txt" rel="nofollow">
+            <span class="btn-icon"><span class="fas fa-code"></span></span>
+            <span class="btn-text">View source</span>
+        </a>
+    </div>
+</div>
+<!-- /breadcrumbs.html -->
+<!-- displaysettingsui.html -->
+<div id="displaysettingsui" class="displaysettingsui">
+<div class="dsDivCogwheel"><i id="dsCogwheel" class="fas fa-cog" title="Display settings"></i></div>
+<div id="dsPanel" class="dsPanel" ><p><b>Display settings</b></p>
+<input type="checkbox" id="cbFullWidth"><label for="cbFullWidth">Use full width</label><br>
+Color scheme of code blocks:<br>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeDark" checked="checked" value="dark"/>
+<label for="rbCbsThemeDark">dark</label>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeLight" value="light"/>
+<label for="rbCbsThemeLight">light</label><br>
+<input type="checkbox" id="cbPermanent"><label for="cbPermanent">Make settings permanent</label><br>
+</div><!--/.dsPanel-->
+</div><!--/.displaysettingsui-->
+<!-- /displaysettingsui.html -->
+<!-- versionhints.html -->
+<div class="version-hints">
+
+    <div class="version-hints-inner" data-run-ajax="no">
+<!--filled from _static/ajax-version-hints.html-->
+</div><!--/.version-hints-inner-->
+</div><!--/.version-hints-->
+<!-- /versionhints.html -->
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+<!-- body -->
+    <section id="unknownrate">
+<h1>unknownrate<a class="headerlink" href="#unknownrate" title="Permalink to this headline">¶</a></h1>
+<section id="add2set">
+<h2>add2set_<a class="headerlink" href="#add2set" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.add2set_">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">add2set_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ccf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#add2set_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.add2set_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ds</strong> – </p></li>
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>cp</strong> – </p></li>
+<li><p><strong>ccf</strong> – </p></li>
+<li><p><strong>iter</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+<li><p><strong>capsize</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="add2set-loop">
+<h2>add2set_loop<a class="headerlink" href="#add2set-loop" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.add2set_loop">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">add2set_loop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ccf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#add2set_loop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.add2set_loop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ds</strong> – </p></li>
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>cp</strong> – </p></li>
+<li><p><strong>ccf</strong> – </p></li>
+<li><p><strong>iter</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+<li><p><strong>capsize</strong> – </p></li>
+<li><p><strong>currsize</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="allsloops">
+<h2>allsloops<a class="headerlink" href="#allsloops" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.allsloops">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">allsloops</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#allsloops"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.allsloops" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<em>(</em><em>GUESS</em><em>)</em><em>integer</em>) – </p></li>
+<li><p><strong>asl</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="bconflictor">
+<h2>bconflictor<a class="headerlink" href="#bconflictor" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.bconflictor">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">bconflictor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#bconflictor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.bconflictor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>e</strong> – </p></li>
+<li><p><strong>H</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="build-loop-step">
+<h2>build_loop_step<a class="headerlink" href="#build-loop-step" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.build_loop_step">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">build_loop_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#build_loop_step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.build_loop_step" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ds</strong> – </p></li>
+<li><p><strong>loop</strong> – </p></li>
+<li><p><strong>n</strong> – </p></li>
+<li><p><strong>iter</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="cacheconflicts">
+<h2>cacheconflicts<a class="headerlink" href="#cacheconflicts" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.cacheconflicts">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">cacheconflicts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#cacheconflicts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.cacheconflicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a number representation of a graph and an iterable of
+conflicting subgraphs return True if the graph conflicts with any
+of them and false otherwise</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num</strong> – the number representation of a graph</p></li>
+<li><p><strong>cache</strong> – an iterable of number representations of conflicting graphs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="conflictor">
+<h2>conflictor<a class="headerlink" href="#conflictor" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.conflictor">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">conflictor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#conflictor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.conflictor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>e</strong> – </p></li>
+<li><p><strong>H</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="conflictor-set">
+<h2>conflictor_set<a class="headerlink" href="#conflictor-set" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.conflictor_set">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">conflictor_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#conflictor_set"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.conflictor_set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>H</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="conflictors">
+<h2>conflictors<a class="headerlink" href="#conflictors" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.conflictors">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">conflictors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#conflictors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.conflictors" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>H</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="confpairs">
+<h2>confpairs<a class="headerlink" href="#confpairs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.confpairs">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">confpairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#confpairs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.confpairs" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>H</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="delaloop">
+<h2>delAloop<a class="headerlink" href="#delaloop" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.delAloop">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">delAloop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#delAloop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.delAloop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> – (GUESS)graph that generates the loop</p></li>
+<li><p><strong>g</strong> – </p></li>
+<li><p><strong>loop</strong> – (GUESS)the reference loop</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="del-loop">
+<h2>del_loop<a class="headerlink" href="#del-loop" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.del_loop">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">del_loop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#del_loop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.del_loop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ds</strong> – </p></li>
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>iter</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+<li><p><strong>capsize</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="e2num">
+<h2>e2num<a class="headerlink" href="#e2num" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.e2num">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">e2num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#e2num"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.e2num" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>e</strong> – </p></li>
+<li><p><strong>n</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="ekey2e">
+<h2>ekey2e<a class="headerlink" href="#ekey2e" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.ekey2e">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">ekey2e</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ekey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#ekey2e"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.ekey2e" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ekey</strong> – </p></li>
+<li><p><strong>n</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="forward-loop-match">
+<h2>forward_loop_match<a class="headerlink" href="#forward-loop-match" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.forward_loop_match">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">forward_loop_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#forward_loop_match"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.forward_loop_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start with an empty graph and keep adding simple loops until
+the loop is generated at some undersampling rate</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>loop</strong> – binary encoding of the loop</p></li>
+<li><p><strong>n</strong> – number of nodes in the graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="gen-loops">
+<h2>gen_loops<a class="headerlink" href="#gen-loops" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.gen_loops">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">gen_loops</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#gen_loops"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.gen_loops" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>(</em><em>GUESS</em><em>)</em><em>integer</em>) – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="iteqclass">
+<h2>iteqclass<a class="headerlink" href="#iteqclass" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.iteqclass">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">iteqclass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#iteqclass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.iteqclass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all graphs in the same equivalence class with respect to
+graph H and any undesampling rate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+<li><p><strong>capsize</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="lconflictors">
+<h2>lconflictors<a class="headerlink" href="#lconflictors" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.lconflictors">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">lconflictors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sloops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#lconflictors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.lconflictors" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>sloops</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="lconfpairs">
+<h2>lconfpairs<a class="headerlink" href="#lconfpairs" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.lconfpairs">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">lconfpairs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sloops</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#lconfpairs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.lconfpairs" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>cap</strong> – </p></li>
+<li><p><strong>sloops</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="le2num">
+<h2>le2num<a class="headerlink" href="#le2num" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.le2num">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">le2num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">elist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#le2num"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.le2num" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>elist</strong> – list of edges to check</p></li>
+<li><p><strong>n</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="liteqclass">
+<h2>liteqclass<a class="headerlink" href="#liteqclass" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.liteqclass">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">liteqclass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#liteqclass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.liteqclass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all graphs in the same equivalence class with respect to
+graph H and any undesampling rate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+<li><p><strong>capsize</strong> – </p></li>
+<li><p><strong>asl</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="loop2graph">
+<h2>loop2graph<a class="headerlink" href="#loop2graph" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.loop2graph">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">loop2graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#loop2graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.loop2graph" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>l</strong> (<em>(</em><em>GUESS</em><em>)</em><em>integer</em>) – </p></li>
+<li><p><strong>n</strong> (<em>(</em><em>GUESS</em><em>)</em><em>integer</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="matchaloop">
+<h2>matchAloop<a class="headerlink" href="#matchaloop" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.matchAloop">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">matchAloop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#matchAloop"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.matchAloop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a set of minimal graphs that generate this loop</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>loop</strong> – binary encoding of the loop</p></li>
+<li><p><strong>n</strong> – number of nodes in the graph</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="perm-circular">
+<h2>perm_circular<a class="headerlink" href="#perm-circular" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.perm_circular">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">perm_circular</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#perm_circular"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.perm_circular" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>l</strong> (<em>(</em><em>GUESS</em><em>)</em><em>integer</em>) – </p></li>
+<li><p><strong>cp</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="prune-conflicts">
+<h2>prune_conflicts<a class="headerlink" href="#prune-conflicts" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.prune_conflicts">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">prune_conflicts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elist</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#prune_conflicts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.prune_conflicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if adding an edge from the list to graph g causes a
+conflict with respect to H and if it does removes the edge
+from the list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> – the undersampled graph</p></li>
+<li><p><strong>g</strong> – a graph under construction</p></li>
+<li><p><strong>elist</strong> – list of edges to check</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="prune-loops">
+<h2>prune_loops<a class="headerlink" href="#prune-loops" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.prune_loops">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">prune_loops</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loops</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#prune_loops"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.prune_loops" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>loops</strong> – </p></li>
+<li><p><strong>H</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="reverse">
+<h2>reverse<a class="headerlink" href="#reverse" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.reverse">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">reverse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#reverse"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+<li><p><strong>capsize</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="reverse-edge-match">
+<h2>reverse_edge_match<a class="headerlink" href="#reverse-edge-match" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.reverse_edge_match">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">reverse_edge_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#reverse_edge_match"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.reverse_edge_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start with a graph and keep removing loops while the loop is still matched</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> – graph that generates the loop</p></li>
+<li><p><strong>g</strong> – </p></li>
+<li><p><strong>loop</strong> – the reference loop</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="reverse-loop-match">
+<h2>reverse_loop_match<a class="headerlink" href="#reverse-loop-match" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.reverse_loop_match">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">reverse_loop_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loop</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#reverse_loop_match"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.reverse_loop_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start with a graph and keep removing loops while the loop is still matched</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g</strong> – graph that generates the loop</p></li>
+<li><p><strong>g</strong> – </p></li>
+<li><p><strong>loop</strong> – the reference loop</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="skip-conflict">
+<h2>skip_conflict<a class="headerlink" href="#skip-conflict" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.skip_conflict">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">skip_conflict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">g1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ds</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#skip_conflict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.skip_conflict" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>g1</strong> – </p></li>
+<li><p><strong>g2</strong> – </p></li>
+<li><p><strong>ds</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="skip-conflictors">
+<h2>skip_conflictors<a class="headerlink" href="#skip-conflictors" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.skip_conflictors">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">skip_conflictors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ccf</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#skip_conflictors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.skip_conflictors" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gnum</strong> – </p></li>
+<li><p><strong>ccf</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="start-progress-bar">
+<h2>start_progress_bar<a class="headerlink" href="#start-progress-bar" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="gunfolds.tools.unknownrate.start_progress_bar">
+<span class="sig-prename descclassname"><span class="pre">gunfolds.tools.unknownrate.</span></span><span class="sig-name descname"><span class="pre">start_progress_bar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/gunfolds/tools/unknownrate.html#start_progress_bar"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gunfolds.tools.unknownrate.start_progress_bar" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>iter</strong> – </p></li>
+<li><p><strong>n</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+<!-- /body -->
+                            </div>
+                        </div>
+<!-- pager.html -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="traversal.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="zickle.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+<!-- /pager.html -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="page-footer">
+<!-- footer.html -->
+<footer>
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <div class="footer-additional">
+                    <ul class="footer-simplemenu">
+                        <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" title="sphinx_typo3_theme" target="_blank">
+                        <span>TYPO3 Theme 4.7.9</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-meta">
+                    <div class="footer-meta-copyright">
+                        &copy; Copyright neuroneural.net
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer.html -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: './',
+            VERSION: '',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+    <script type="text/javascript" src="_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="_static/js/underscore.min.js"></script>
+    <script type="text/javascript" src="_static/js/doctools.min.js"></script>
+    <script type="text/javascript" src="_static/js/popper.min.js"></script>
+    <script type="text/javascript" src="_static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/js/theme.min.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/searchtools.min.js"></script>
+    <script type="text/javascript" src="_static/js/autocomplete.min.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script type="text/javascript">
+        jQuery(function() { Search.loadIndex("searchindex.js"); });
+    </script>
+    <script type="text/javascript" id="searchindexloader"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+
+</body>
+</html>

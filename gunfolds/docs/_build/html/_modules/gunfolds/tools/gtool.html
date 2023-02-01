@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="docsearch:name" content="gunfolds" />
+    <meta name="docsearch:package_type" content="" />
+    <meta name="docsearch:release" content="" />
+    <meta name="docsearch:version" content="" />
+
+    <title>gunfolds.tools.gtool &mdash; gunfolds  documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/fontawesome.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/webfonts.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/codeblock.css" />
+<!-- linktags -->
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="top" title="gunfolds  documentation" href="#" />
+    <link rel="up" title="Module code" href="../../index.html" />
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+    <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="page-header">
+            <div class="page-header-inner">
+<!--block pageheader-->
+<div class="row">
+    <div class="col-sm-6 col-lg-7">
+
+        <div class="logo">
+        <a href="https://docs.typo3.org/" title="TYPO3 Documentation" >
+
+            <img src="../../../_static/gunfolds.png" width="484" height="130" alt="TYPO3 Logo" class="logo-image" />
+        </a>
+        </div>
+    </div><!--/.col-x-->
+    <div class="col-sm-6 col-lg-5">
+        <div role="search">
+            
+            <!--form global search-->
+        </div>
+    </div><!--/.col-x-->
+</div><!--/.row-->
+<!--/block pageheader-->
+            </div><!--/.page-header-inner-->
+        </div><!--/.page-header-->
+
+        
+
+        <div class="page-main">
+            <div class="page-main-inner">
+                <div class="page-main-navigation">
+                    <nav>
+                        <input type="checkbox" id="toggleToc" class="toc-checkbox">
+                        <div class="toc-header"><div class="toc-title">
+                                    <a class="toc-title-project" href="../../../index.html">gunfolds</a></div><div class="toc-actions">
+                                <label for="toggleToc" class="toc-toggle">
+                                    Menu
+                                </label>
+                            </div>
+                        </div>
+                        <div class="toc-collapse">
+<!-- searchbox.html -->
+<div id="searchbox" class="toc-search" role="search">
+    <form id="search-form" action="../../../search.html" autocomplete="off" method="get">
+        <input class="form-control" type="text" name="q" placeholder="Search this project" aria-label="Search this project" id="searchinput" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<!-- /searchbox.html -->
+                            <div class="toc" role="navigation" aria-label="main navigation">
+<!-- menu -->
+                                        <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../examples.html">Running examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../benchmarks.html">Benchmarks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributers.html">Contributors</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">gunfolds</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tools.html">tools package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../bfutils.html">bfutils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../calc_procs.html">calc_procs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../clingo.html">clingo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../clingo_msl.html">clingo_msl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../clingo_rasl.html">clingo_rasl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../comparison.html">comparison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../conversions.html">conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbn2latex.html">dbn2latex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ecj.html">ecj</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../grangercausality.html">grangercausality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../graphkit.html">graphkit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../gtool.html">gtool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../linear_model.html">linear_model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../myTimeout.html">myTimeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../neighborhoods.html">neighborhoods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pc.html">pc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../simpleloops.html">simpleloops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../traversal.html">traversal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../unknownrate.html">unknownrate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../zickle.html">zickle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- /menu -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="page-main-content">
+                    <div class="rst-content">
+<!-- pager-hidden.html -->
+
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div class="breadcrumb-bar" role="navigation" aria-label="breadcrumbs navigation">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../../../index.html">Start</a></li>
+            <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+        <li class="breadcrumb-item active" aria-current="page">gunfolds.tools.gtool</li>
+    </ol>
+    <div class="breadcrumb-additions">
+    </div>
+</div>
+<!-- /breadcrumbs.html -->
+<!-- displaysettingsui.html -->
+<div id="displaysettingsui" class="displaysettingsui">
+<div class="dsDivCogwheel"><i id="dsCogwheel" class="fas fa-cog" title="Display settings"></i></div>
+<div id="dsPanel" class="dsPanel" ><p><b>Display settings</b></p>
+<input type="checkbox" id="cbFullWidth"><label for="cbFullWidth">Use full width</label><br>
+Color scheme of code blocks:<br>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeDark" checked="checked" value="dark"/>
+<label for="rbCbsThemeDark">dark</label>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeLight" value="light"/>
+<label for="rbCbsThemeLight">light</label><br>
+<input type="checkbox" id="cbPermanent"><label for="cbPermanent">Make settings permanent</label><br>
+</div><!--/.dsPanel-->
+</div><!--/.displaysettingsui-->
+<!-- /displaysettingsui.html -->
+<!-- versionhints.html -->
+<div class="version-hints">
+
+    <div class="version-hints-inner" data-run-ajax="no">
+<!--filled from _static/ajax-version-hints.html-->
+</div><!--/.version-hints-inner-->
+</div><!--/.version-hints-->
+<!-- /versionhints.html -->
+                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                            <div itemprop="articleBody">
+<!-- body -->
+    <h1>Source code for gunfolds.tools.gtool</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">graph_tool</span> <span class="k">as</span> <span class="nn">gt</span>
+<span class="kn">from</span> <span class="nn">graph_tool</span> <span class="kn">import</span> <span class="n">draw</span> <span class="k">as</span> <span class="n">gtd</span>
+<span class="kn">from</span> <span class="nn">graph_tool.draw.cairo_draw</span> <span class="kn">import</span> <span class="n">position_parallel_edges</span>
+<span class="kn">import</span> <span class="nn">gunfolds.tools.graphkit</span> <span class="k">as</span> <span class="nn">gk</span>
+<span class="kn">import</span> <span class="nn">gunfolds.tools.bfutils</span> <span class="k">as</span> <span class="nn">bfu</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">gi</span> <span class="kn">import</span> <span class="n">require_version</span>
+<span class="n">require_version</span><span class="p">(</span><span class="s2">&quot;Gdk&quot;</span><span class="p">,</span> <span class="s2">&quot;3.0&quot;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">gi.repository</span> <span class="kn">import</span> <span class="n">Gdk</span>
+
+<div class="viewcode-block" id="getscreensize"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.getscreensize">[docs]</a><span class="k">def</span> <span class="nf">getscreensize</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a tuple ``(w,h)`` with the largest width ``w`` and height ``h`` among all connected monitors.</span>
+
+<span class="sd">    :returns: a tuple ``(w,h)``</span>
+<span class="sd">    :rtype: a tuple with integer values</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># from here https://stackoverflow.com/a/65894179</span>
+    <span class="n">screen</span> <span class="o">=</span> <span class="n">Gdk</span><span class="o">.</span><span class="n">Display</span><span class="o">.</span><span class="n">get_default</span><span class="p">()</span>
+    <span class="n">w</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">h</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">screen</span><span class="o">.</span><span class="n">get_n_monitors</span><span class="p">()):</span>
+        <span class="n">xw</span> <span class="o">=</span> <span class="n">screen</span><span class="o">.</span><span class="n">get_monitor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">get_geometry</span><span class="p">()</span><span class="o">.</span><span class="n">width</span>
+        <span class="n">xh</span> <span class="o">=</span> <span class="n">screen</span><span class="o">.</span><span class="n">get_monitor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">get_geometry</span><span class="p">()</span><span class="o">.</span><span class="n">height</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="n">w</span> <span class="o">&lt;</span> <span class="n">xw</span> <span class="p">):</span> <span class="n">w</span> <span class="o">=</span> <span class="n">xw</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="n">h</span> <span class="o">&lt;</span> <span class="n">xh</span> <span class="p">):</span> <span class="n">h</span> <span class="o">=</span> <span class="n">xh</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="circ_position"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.circ_position">[docs]</a><span class="k">def</span> <span class="nf">circ_position</span><span class="p">(</span><span class="n">gg</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generates node positions for graph-tool graph that arrange them in a ring</span>
+
+<span class="sd">    :param gg: ``graph-tool`` graph object</span>
+<span class="sd">    :type gg: a ``graph-tool`` object of class Graph</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">gg</span><span class="o">.</span><span class="n">new_vertex_property</span><span class="p">(</span><span class="s2">&quot;vector&lt;double&gt;&quot;</span><span class="p">)</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">gg</span><span class="o">.</span><span class="n">num_vertices</span><span class="p">()</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">n</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">][</span><span class="n">gg</span><span class="o">.</span><span class="n">vertex</span><span class="p">(</span><span class="n">v</span><span class="p">)])</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">pos</span><span class="p">[</span><span class="n">gg</span><span class="o">.</span><span class="n">vertex</span><span class="p">(</span><span class="n">v</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">s</span> <span class="o">*</span> <span class="n">idx</span><span class="p">),</span>
+                             <span class="n">n</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">s</span> <span class="o">*</span> <span class="n">idx</span><span class="p">))</span>
+    <span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span></div>
+
+<div class="viewcode-block" id="every_edge_control_points"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.every_edge_control_points">[docs]</a><span class="k">def</span> <span class="nf">every_edge_control_points</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate a graph-tool Graph class object with all possible edges (a superclicue).</span>
+
+<span class="sd">    The function generates a graph and populates all parameters for all edges. It first does not include the bidirected adges to compute the control_points for directed edges so that they all curve. Subsequently it adds bidirected (red) edges and resets their control points to have all bidirected edges be rendered as straight lines.</span>
+
+<span class="sd">    :param n: number of nodes</span>
+<span class="sd">    :type n: integer</span>
+
+<span class="sd">    :returns: ``graph-tool`` graph</span>
+<span class="sd">    :rtype: a ``graph-tool`` object of class Graph</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">g</span> <span class="o">=</span> <span class="n">gk</span><span class="o">.</span><span class="n">fullyconnected</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+    <span class="n">gr</span> <span class="o">=</span> <span class="n">gt</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+
+    <span class="n">vlabel</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">new_vertex_property</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">)</span>
+    <span class="n">ecolor</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">new_edge_property</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">)</span>
+    <span class="n">ep_width</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">new_edge_property</span><span class="p">(</span><span class="s2">&quot;float&quot;</span><span class="p">)</span>
+    <span class="n">em_size</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">new_edge_property</span><span class="p">(</span><span class="s2">&quot;float&quot;</span><span class="p">)</span>
+
+    <span class="n">verts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">edges</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">g</span><span class="p">:</span>
+        <span class="n">verts</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">add_vertex</span><span class="p">()</span>
+        <span class="n">vlabel</span><span class="p">[</span><span class="n">verts</span><span class="p">[</span><span class="n">v</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="n">gr</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">vlabel</span>
+    <span class="n">circ_position</span><span class="p">(</span><span class="n">gr</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">g</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">g</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
+            <span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">verts</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">verts</span><span class="p">[</span><span class="n">w</span><span class="p">])</span>
+            <span class="n">ecolor</span><span class="p">[</span><span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]]</span> <span class="o">=</span> <span class="s1">&#39;k&#39;</span>
+            <span class="n">ep_width</span><span class="p">[</span><span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">em_size</span><span class="p">[</span><span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]]</span> <span class="o">=</span> <span class="mi">15</span>
+
+    <span class="n">control</span> <span class="o">=</span> <span class="n">position_parallel_edges</span><span class="p">(</span><span class="n">gr</span><span class="p">,</span> <span class="n">gr</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">])</span>
+
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">verts</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">verts</span><span class="p">[</span><span class="n">w</span><span class="p">])</span>
+            <span class="n">ecolor</span><span class="p">[</span><span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]]</span> <span class="o">=</span> <span class="s1">&#39;r&#39;</span>
+            <span class="n">ep_width</span><span class="p">[</span><span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">em_size</span><span class="p">[</span><span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">control</span><span class="p">[</span><span class="n">edges</span><span class="p">[(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)]]</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">gr</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ecolor</span>
+    <span class="n">gr</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s2">&quot;pen_width&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ep_width</span>
+    <span class="n">gr</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s2">&quot;marker_size&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">em_size</span>
+    <span class="n">gr</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s2">&quot;control&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">control</span>
+
+    <span class="k">return</span> <span class="n">gr</span></div>
+
+<div class="viewcode-block" id="colorcomponents"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.colorcomponents">[docs]</a><span class="k">def</span> <span class="nf">colorcomponents</span><span class="p">(</span><span class="n">gr</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Assigns a color to each vertex to ensure that vertices from the same strongly connected component have the same color.</span>
+
+<span class="sd">    By default 12 distinct colors from colorbrewer2 quantitative palette are used and anything beyond that is assigned a white color. In the future that behaviour may change to assigning random colors or to assigning useful semantics to color temperature or shade (such as SCC density or size).</span>
+
+<span class="sd">    :param gr: ``graph-tool`` graph</span>
+<span class="sd">    :type gr: a ``graph-tool`` object of class Graph</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;#9feb3dff&quot;</span><span class="p">,</span>
+        <span class="s1">&#39;#a6cee3ff&#39;</span><span class="p">,</span><span class="s1">&#39;#1f78b4ff&#39;</span><span class="p">,</span><span class="s1">&#39;#b2df8aff&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;#33a02cff&#39;</span><span class="p">,</span><span class="s1">&#39;#fb9a99ff&#39;</span><span class="p">,</span><span class="s1">&#39;#e31a1cff&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;#fdbf6fff&#39;</span><span class="p">,</span><span class="s1">&#39;#ff7f00ff&#39;</span><span class="p">,</span><span class="s1">&#39;#cab2d6ff&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;#6a3d9aff&#39;</span><span class="p">,</span><span class="s1">&#39;#ffff99ff&#39;</span><span class="p">,</span><span class="s1">&#39;#b15928ff&#39;</span><span class="p">]</span>
+    <span class="n">ecolor</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span>
+    <span class="n">vcolor</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">new_vertex_property</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">)</span>
+
+    <span class="n">is_true_directed</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">new_edge_property</span><span class="p">(</span><span class="s2">&quot;bool&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">gr</span><span class="o">.</span><span class="n">edges</span><span class="p">():</span>
+        <span class="n">is_true_directed</span><span class="p">[</span><span class="n">edge</span><span class="p">]</span> <span class="o">=</span> <span class="n">ecolor</span><span class="p">[</span><span class="n">edge</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;k&#39;</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">gt</span><span class="o">.</span><span class="n">GraphView</span><span class="p">(</span><span class="n">gr</span><span class="p">,</span> <span class="n">efilt</span><span class="o">=</span><span class="n">is_true_directed</span><span class="p">)</span>
+    <span class="n">comp</span><span class="p">,</span> <span class="n">hist</span> <span class="o">=</span> <span class="n">gt</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">label_components</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">gr</span><span class="o">.</span><span class="n">vertices</span><span class="p">()):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">vcolor</span><span class="p">[</span><span class="n">vertex</span><span class="p">]</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">comp</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+            <span class="n">vcolor</span><span class="p">[</span><span class="n">vertex</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#00000000&#39;</span>
+    <span class="n">gr</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">vcolor</span></div>
+
+<div class="viewcode-block" id="g2gt"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.g2gt">[docs]</a><span class="k">def</span> <span class="nf">g2gt</span><span class="p">(</span><span class="n">g</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Converts a ``gunfolds`` graph to an object of class Graph of ``graph-tool`` package. This includes setting all parameters of edges and vertices but vertex colors.</span>
+
+<span class="sd">    :param g: ``gunfolds`` graph</span>
+<span class="sd">    :type g: dictionary (``gunfolds`` graphs)</span>
+
+<span class="sd">    :returns: ``graph-tool`` graph</span>
+<span class="sd">    :rtype: a ``graph-tool`` object of class Graph</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">gr</span> <span class="o">=</span> <span class="n">every_edge_control_points</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span>
+
+    <span class="n">edge_removal</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">gr</span><span class="o">.</span><span class="n">edges</span><span class="p">():</span>
+        <span class="n">v</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">vertex_index</span><span class="p">[</span><span class="n">edge</span><span class="o">.</span><span class="n">source</span><span class="p">()]</span><span class="o">+</span><span class="mi">1</span>
+        <span class="n">w</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">vertex_index</span><span class="p">[</span><span class="n">edge</span><span class="o">.</span><span class="n">target</span><span class="p">()]</span><span class="o">+</span><span class="mi">1</span>
+        <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">edge</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span> <span class="ow">and</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">g</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="ow">and</span> <span class="n">g</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">w</span><span class="p">]</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}:</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">edge</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;k&#39;</span> <span class="ow">and</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">g</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="ow">and</span> <span class="n">g</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">w</span><span class="p">]</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">}:</span>
+            <span class="k">continue</span>
+        <span class="n">edge_removal</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">edge</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">edge</span> <span class="ow">in</span> <span class="n">edge_removal</span><span class="p">:</span>
+        <span class="n">gr</span><span class="o">.</span><span class="n">remove_edge</span><span class="p">(</span><span class="n">edge</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">gr</span></div>
+
+<div class="viewcode-block" id="gt2g"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.gt2g">[docs]</a><span class="k">def</span> <span class="nf">gt2g</span><span class="p">(</span><span class="n">gr</span><span class="p">,</span> <span class="n">dir_c</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">bidir_c</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Converts a ``graph-tool`` object of class Graph to ``gunfolds`` graph</span>
+
+<span class="sd">    :param gr: ``gunfolds`` graph</span>
+<span class="sd">    :type gr: dictionary(``gunfolds`` graph)</span>
+
+<span class="sd">    :returns: ``gunfolds`` graph</span>
+<span class="sd">    :rtype: dictionary (``gunfolds`` graphs)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># check if the graph-tool graph has edge colors</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">g</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">gr</span><span class="o">.</span><span class="n">vertices</span><span class="p">():</span>
+        <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">out_edges</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">color</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="o">.</span><span class="n">out_edges</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">==</span> <span class="n">dir_c</span><span class="p">:</span>
+                        <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">target</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="o">.</span><span class="n">out_edges</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">==</span> <span class="n">bidir_c</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">target</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span> <span class="ow">in</span> <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+                            <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">target</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">target</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+                <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="o">.</span><span class="n">in_edges</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">==</span> <span class="n">bidir_c</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">source</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span> <span class="ow">in</span> <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+                            <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">source</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">source</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">g</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">target</span><span class="p">()))</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">v</span><span class="o">.</span><span class="n">out_edges</span><span class="p">()}</span>
+    <span class="k">return</span> <span class="n">g</span></div>
+
+
+<div class="viewcode-block" id="hshift"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.hshift">[docs]</a><span class="k">def</span> <span class="nf">hshift</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">shift</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Horizontally shift positions of all nodes of ``graph-tool`` graph ``g`` by the value of ``shift``</span>
+
+<span class="sd">    :param g: ``graph-tool`` graph</span>
+<span class="sd">    :type g: a ``graph-tool`` object of class Graph</span>
+
+<span class="sd">    :param shift: shift value</span>
+<span class="sd">    :type shift: float</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">vertices</span><span class="p">():</span>
+        <span class="n">pos</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">shift</span></div>
+
+
+<div class="viewcode-block" id="linegraph"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.linegraph">[docs]</a><span class="k">def</span> <span class="nf">linegraph</span><span class="p">(</span><span class="n">glist</span><span class="p">,</span> <span class="n">sccs</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Takes a list of ``gunfolds`` graphs and merges them into a single Graph class ``graph-tool`` object taking care of node positions of each graph to ensure that the constituent graphs are arranged in a single raw when plotted.</span>
+
+<span class="sd">    :param glist: a list of ``gunfold`` graphs</span>
+<span class="sd">    :type glist: list of dictionaries (``gunfolds`` graphs)</span>
+
+<span class="sd">    :param sccs: whether to distinguish SCCs by color</span>
+<span class="sd">    :type sccs: boolean</span>
+
+<span class="sd">    :returns: ``graph-tool`` graph</span>
+<span class="sd">    :rtype: a ``graph-tool`` object of class Graph</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">gr</span> <span class="o">=</span> <span class="n">gt</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+
+    <span class="n">shift</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">glist</span><span class="p">):</span>
+        <span class="n">g_i</span> <span class="o">=</span> <span class="n">g2gt</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sccs</span><span class="p">:</span>
+            <span class="n">colorcomponents</span><span class="p">(</span><span class="n">g_i</span><span class="p">)</span>
+        <span class="n">hshift</span><span class="p">(</span><span class="n">g_i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">shift</span><span class="p">)</span>
+        <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">g_i</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">]])</span>
+        <span class="n">shift</span> <span class="o">=</span> <span class="mf">1.5</span><span class="o">*</span><span class="p">(</span><span class="n">points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+        <span class="n">gt</span><span class="o">.</span><span class="n">generation</span><span class="o">.</span><span class="n">graph_union</span><span class="p">(</span><span class="n">gr</span><span class="p">,</span> <span class="n">g_i</span><span class="p">,</span>
+                                  <span class="n">internal_props</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                  <span class="n">include</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">gr</span></div>
+
+<div class="viewcode-block" id="plotg"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.plotg">[docs]</a><span class="k">def</span> <span class="nf">plotg</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">sccs</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Given a ``gunfolds`` graph, plots it in an interactive window</span>
+
+<span class="sd">    :param g: ``gunfolds`` graph</span>
+<span class="sd">    :type g: dictionary (``gunfolds`` graphs)</span>
+
+<span class="sd">    :param sccs: whether to distinguish SCCs by color</span>
+<span class="sd">    :type sccs: boolean</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">gg</span> <span class="o">=</span> <span class="n">g2gt</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+
+    <span class="n">vcolors</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.62109375</span><span class="p">,</span> <span class="mf">0.875</span><span class="p">,</span> <span class="mf">0.23828125</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">sccs</span><span class="p">:</span>
+        <span class="n">colorcomponents</span><span class="p">(</span><span class="n">gg</span><span class="p">)</span>
+        <span class="n">vcolors</span> <span class="o">=</span> <span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span>
+
+    <span class="n">gtd</span><span class="o">.</span><span class="n">graph_draw</span><span class="p">(</span><span class="n">gg</span><span class="p">,</span> <span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">],</span>
+           <span class="n">vertex_text</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">],</span>
+           <span class="n">edge_pen_width</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;pen_width&#39;</span><span class="p">],</span>
+           <span class="n">edge_marker_size</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;marker_size&#39;</span><span class="p">],</span>
+           <span class="n">edge_control_points</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;control&#39;</span><span class="p">],</span>
+           <span class="n">vertex_pen_width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+           <span class="n">edge_color</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">],</span>
+           <span class="n">vertex_fill_color</span><span class="o">=</span><span class="n">vcolors</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="plotgunfolds"><a class="viewcode-back" href="../../../gtool.html#gunfolds.tools.gtool.plotgunfolds">[docs]</a><span class="k">def</span> <span class="nf">plotgunfolds</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">interactive</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sccs</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Given a ``gunfolds`` graph plots all of its undersamples versions arranged sequentially in a horizontal line.</span>
+
+<span class="sd">    :param g: ``gunfolds`` graph</span>
+<span class="sd">    :type g: dictionary (``gunfolds`` graphs)</span>
+
+<span class="sd">    :param interactive: whether to make the window interactive</span>
+<span class="sd">    :type interactive: boolean</span>
+
+<span class="sd">    :param sccs: whether to distinguish SCCs by color</span>
+<span class="sd">    :type sccs: boolean</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">x</span> <span class="o">=</span> <span class="n">bfu</span><span class="o">.</span><span class="n">all_undersamples</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+    <span class="n">gg</span> <span class="o">=</span> <span class="n">linegraph</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sccs</span><span class="o">=</span><span class="n">sccs</span><span class="p">)</span>
+
+    <span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">]])</span>
+    <span class="n">width</span> <span class="o">=</span> <span class="n">points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">points</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="n">points</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">points</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+    <span class="n">f_w</span> <span class="o">=</span> <span class="n">getscreensize</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">f_h</span> <span class="o">=</span> <span class="n">height</span><span class="o">/</span><span class="n">width</span> <span class="o">*</span> <span class="n">f_w</span>
+    <span class="n">hshift</span><span class="p">(</span><span class="n">gg</span><span class="p">,</span> <span class="o">-</span><span class="n">width</span><span class="p">)</span>
+
+    <span class="n">vcolors</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.62109375</span><span class="p">,</span> <span class="mf">0.875</span><span class="p">,</span> <span class="mf">0.23828125</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">sccs</span><span class="p">:</span>
+        <span class="n">vcolors</span> <span class="o">=</span> <span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;color&quot;</span><span class="p">]</span>
+
+    <span class="n">gtd</span><span class="o">.</span><span class="n">graph_draw</span><span class="p">(</span><span class="n">gg</span><span class="p">,</span> <span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">],</span>
+                   <span class="n">vertex_text</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">vertex_properties</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">],</span>
+                   <span class="n">edge_pen_width</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;pen_width&#39;</span><span class="p">],</span>
+                   <span class="n">edge_marker_size</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;marker_size&#39;</span><span class="p">],</span>
+                   <span class="n">edge_control_points</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;control&#39;</span><span class="p">],</span>
+                   <span class="n">vertex_pen_width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                   <span class="n">adjust_aspect</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                   <span class="n">fit_view</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                   <span class="n">fit_view_ink</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                   <span class="n">output_size</span><span class="o">=</span><span class="p">(</span><span class="n">f_w</span><span class="p">,</span> <span class="n">f_h</span><span class="p">),</span>
+                   <span class="n">edge_color</span><span class="o">=</span><span class="n">gg</span><span class="o">.</span><span class="n">edge_properties</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">],</span>
+                   <span class="n">vertex_fill_color</span><span class="o">=</span><span class="n">vcolors</span><span class="p">,</span>
+                   <span class="n">main</span><span class="o">=</span><span class="n">interactive</span>
+                   <span class="p">)</span></div>
+</pre></div>
+<!-- /body -->
+                            </div>
+                        </div>
+<!-- pager.html -->
+
+<!-- /pager.html -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="page-footer">
+<!-- footer.html -->
+<footer>
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <div class="footer-additional">
+                    <ul class="footer-simplemenu">
+                        <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" title="sphinx_typo3_theme" target="_blank">
+                        <span>TYPO3 Theme 4.7.9</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-meta">
+                    <div class="footer-meta-copyright">
+                        &copy; Copyright neuroneural.net
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer.html -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: '../../../',
+            VERSION: '',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/underscore.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/doctools.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/popper.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/theme.min.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/js/searchtools.min.js"></script>
+    <script type="text/javascript" src="../../../_static/js/autocomplete.min.js"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../../../searchindex.js"); });
+    </script>
+    <script type="text/javascript" id="searchindexloader"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+
+</body>
+</html>
